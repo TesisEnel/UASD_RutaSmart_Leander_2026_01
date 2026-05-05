@@ -12,29 +12,29 @@ Sistema de logística y control de entregas desarrollado en C#.
 
 ## Tecnologías usadas
 
-\- C#
+- C#
 
-\- Windows Forms 
+- Windows Forms 
 
-\- SQL Server
+- SQL Server
 
-\- Entity Framework
-
-
-
-\## Funcionalidades
-
-\- Registro de clientes
-
-\- Gestión de rutas
-
-\- Control de entregas
-
-\- Reportes
+- Entity Framework
 
 
 
-\## Autor
+## Funcionalidades
+
+- Registro de clientes
+  
+- Gestión de rutas
+
+- Control de entregas
+
+- Reportes
+
+
+
+## Autor
 
 Leander Valdez
 
