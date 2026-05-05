@@ -13,24 +13,35 @@ namespace RutaSmart.UI.Services;
 
 public class ClienteService(RutaSmartContext context) : IService<Cliente, int>
 {
-    public Task<Cliente?> Buscar(int id)
+    public async Task<Cliente?> Buscar(int id)
     {
-        throw new NotImplementedException();
+        return await context.Clientes.FindAsync(id);
     }
 
-    public Task<bool> Eliminar(int id)
+    public async Task<bool> Eliminar(int id)
     {
-        throw new NotImplementedException();
+        var cliente = await context.Clientes.FindAsync(id);
+
+        if (cliente == null)
+            return false;
+
+        context.Clientes.Remove(cliente);
+        return (await context.SaveChangesAsync()) > 0;
     }
 
-    public Task<List<Cliente>> GetList(Expression<Func<Cliente, bool>> criterio)
+    public async Task<List<Cliente>> GetList(Expression<Func<Cliente, bool>> criterio)
     {
-        throw new NotImplementedException();
+        return await context.Clientes
+        .Where(criterio)
+        .ToListAsync();
     }
 
-    public Task<bool> Guardar(Cliente entidad)
+    public async Task<bool> Guardar(Cliente entidad)
     {
-        throw new NotImplementedException();
+        if (entidad.ClienteId == 0)
+            return await Insertar(entidad);
+        else
+            return await Modificar(entidad);
     }
 
     public async Task<bool> Insertar(Cliente cliente)
