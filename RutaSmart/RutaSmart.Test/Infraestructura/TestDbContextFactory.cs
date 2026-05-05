@@ -1,8 +1,9 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using RutaSmart.Data.Data; 
+using System;
+using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace RutaSmart.Test.Infraestructura
 {
@@ -10,7 +11,26 @@ namespace RutaSmart.Test.Infraestructura
     {
         public static string NewDatabase() => $"RutaSmart_{Guid.NewGuid()}";
 
+        public static RutaSmartContext CreateContext(string databaseName)
+        {
+            var options = new DbContextOptionsBuilder<RutaSmartContext>()
+                .UseInMemoryDatabase(databaseName)
+                .Options;
 
+            return new InMemoryRutaSmartContext(options);
+        }
+
+        private sealed class InMemoryRutaSmartContext : RutaSmartContext
+        {
+            public InMemoryRutaSmartContext(DbContextOptions<RutaSmartContext> options)
+                : base(options)
+            {
+            }
+
+            protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+            {
+                
+            }
+        }
     }
 }
-

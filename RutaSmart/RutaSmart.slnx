@@ -1,5 +1,5 @@
 <Solution>
   <Project Path="RutaSmart.Data/RutaSmart.Data.csproj" />
-  <Project Path="RutaSmart.Test/RutaSmart.Test.csproj" />
+  <Project Path="RutaSmart.Test/RutaSmart.Test.csproj" Id="3c883a43-095d-4b18-8704-5cc417fac449" />
   <Project Path="RutaSmart/RutaSmart.UI.csproj" />
 </Solution>
