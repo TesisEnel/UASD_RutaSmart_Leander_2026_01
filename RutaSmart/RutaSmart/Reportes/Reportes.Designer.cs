@@ -29,6 +29,25 @@
         private void InitializeComponent()
         {
             panelContainer = new Panel();
+            panel3 = new Panel();
+            tableLayoutPanel3 = new TableLayoutPanel();
+            dataGridView1 = new DataGridView();
+            ID = new DataGridViewTextBoxColumn();
+            Cliente = new DataGridViewTextBoxColumn();
+            Fecha = new DataGridViewTextBoxColumn();
+            Repartidor = new DataGridViewTextBoxColumn();
+            Estado = new DataGridViewTextBoxColumn();
+            Ruta = new DataGridViewTextBoxColumn();
+            panel4 = new Panel();
+            label14 = new Label();
+            label13 = new Label();
+            label12 = new Label();
+            label11 = new Label();
+            label10 = new Label();
+            label9 = new Label();
+            label8 = new Label();
+            label7 = new Label();
+            label6 = new Label();
             panel2 = new Panel();
             tableLayoutPanel2 = new TableLayoutPanel();
             panelFiltros = new Panel();
@@ -43,33 +62,14 @@
             button1 = new Button();
             panel1 = new Panel();
             label1 = new Label();
-            panel3 = new Panel();
-            tableLayoutPanel3 = new TableLayoutPanel();
-            dataGridView1 = new DataGridView();
-            ID = new DataGridViewTextBoxColumn();
-            Cliente = new DataGridViewTextBoxColumn();
-            Fecha = new DataGridViewTextBoxColumn();
-            Repartidor = new DataGridViewTextBoxColumn();
-            Estado = new DataGridViewTextBoxColumn();
-            Ruta = new DataGridViewTextBoxColumn();
-            panel4 = new Panel();
-            label6 = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
-            label10 = new Label();
-            label11 = new Label();
-            label12 = new Label();
-            label13 = new Label();
-            label14 = new Label();
             panelContainer.SuspendLayout();
-            panel2.SuspendLayout();
-            panelFiltros.SuspendLayout();
-            tableLayoutPanel1.SuspendLayout();
             panel3.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel4.SuspendLayout();
+            panel2.SuspendLayout();
+            panelFiltros.SuspendLayout();
+            tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // panelContainer
@@ -86,6 +86,180 @@
             panelContainer.Padding = new Padding(15);
             panelContainer.Size = new Size(800, 525);
             panelContainer.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            panel3.Controls.Add(tableLayoutPanel3);
+            panel3.Dock = DockStyle.Top;
+            panel3.Location = new Point(15, 342);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(770, 175);
+            panel3.TabIndex = 4;
+            // 
+            // tableLayoutPanel3
+            // 
+            tableLayoutPanel3.ColumnCount = 2;
+            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 78F));
+            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 22F));
+            tableLayoutPanel3.Controls.Add(dataGridView1, 0, 0);
+            tableLayoutPanel3.Controls.Add(panel4, 1, 0);
+            tableLayoutPanel3.Dock = DockStyle.Fill;
+            tableLayoutPanel3.Location = new Point(0, 0);
+            tableLayoutPanel3.Name = "tableLayoutPanel3";
+            tableLayoutPanel3.RowCount = 1;
+            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel3.Size = new Size(770, 175);
+            tableLayoutPanel3.TabIndex = 0;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { ID, Cliente, Fecha, Repartidor, Estado, Ruta });
+            dataGridView1.Dock = DockStyle.Fill;
+            dataGridView1.Location = new Point(3, 3);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(594, 169);
+            dataGridView1.TabIndex = 0;
+            // 
+            // ID
+            // 
+            ID.HeaderText = "ID";
+            ID.Name = "ID";
+            // 
+            // Cliente
+            // 
+            Cliente.HeaderText = "Cliente";
+            Cliente.Name = "Cliente";
+            // 
+            // Fecha
+            // 
+            Fecha.HeaderText = "Fecha";
+            Fecha.Name = "Fecha";
+            // 
+            // Repartidor
+            // 
+            Repartidor.HeaderText = "Repartidor";
+            Repartidor.Name = "Repartidor";
+            // 
+            // Estado
+            // 
+            Estado.HeaderText = "Estado";
+            Estado.Name = "Estado";
+            // 
+            // Ruta
+            // 
+            Ruta.HeaderText = "Ruta";
+            Ruta.Name = "Ruta";
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.WhiteSmoke;
+            panel4.BorderStyle = BorderStyle.FixedSingle;
+            panel4.Controls.Add(label14);
+            panel4.Controls.Add(label13);
+            panel4.Controls.Add(label12);
+            panel4.Controls.Add(label11);
+            panel4.Controls.Add(label10);
+            panel4.Controls.Add(label9);
+            panel4.Controls.Add(label8);
+            panel4.Controls.Add(label7);
+            panel4.Controls.Add(label6);
+            panel4.Dock = DockStyle.Fill;
+            panel4.Location = new Point(603, 3);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(164, 169);
+            panel4.TabIndex = 1;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label14.Location = new Point(99, 140);
+            label14.Name = "label14";
+            label14.Size = new Size(14, 15);
+            label14.TabIndex = 8;
+            label14.Text = "0";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label13.Location = new Point(87, 113);
+            label13.Name = "label13";
+            label13.Size = new Size(14, 15);
+            label13.TabIndex = 7;
+            label13.Text = "0";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label12.Location = new Point(117, 88);
+            label12.Name = "label12";
+            label12.Size = new Size(14, 15);
+            label12.TabIndex = 6;
+            label12.Text = "0";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.Location = new Point(79, 64);
+            label11.Name = "label11";
+            label11.Size = new Size(14, 15);
+            label11.TabIndex = 5;
+            label11.Text = "0";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10.Location = new Point(26, 140);
+            label10.Name = "label10";
+            label10.Size = new Size(67, 15);
+            label10.TabIndex = 4;
+            label10.Text = "Entegados:";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.Location = new Point(26, 113);
+            label9.Name = "label9";
+            label9.Size = new Size(52, 15);
+            label9.TabIndex = 3;
+            label9.Text = "En ruta: ";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.Location = new Point(26, 88);
+            label8.Name = "label8";
+            label8.Size = new Size(75, 15);
+            label8.TabIndex = 2;
+            label8.Text = "Pendientes: ";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.Location = new Point(24, 62);
+            label7.Name = "label7";
+            label7.Size = new Size(47, 17);
+            label7.TabIndex = 1;
+            label7.Text = "Total: ";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Location = new Point(44, 23);
+            label6.Name = "label6";
+            label6.Size = new Size(71, 21);
+            label6.TabIndex = 0;
+            label6.Text = "Pedidos";
             // 
             // panel2
             // 
@@ -255,180 +429,6 @@
             label1.TabIndex = 0;
             label1.Text = "Reportes Y Estadisticas";
             // 
-            // panel3
-            // 
-            panel3.Controls.Add(tableLayoutPanel3);
-            panel3.Dock = DockStyle.Top;
-            panel3.Location = new Point(15, 342);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(770, 175);
-            panel3.TabIndex = 4;
-            // 
-            // tableLayoutPanel3
-            // 
-            tableLayoutPanel3.ColumnCount = 2;
-            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 78F));
-            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 22F));
-            tableLayoutPanel3.Controls.Add(dataGridView1, 0, 0);
-            tableLayoutPanel3.Controls.Add(panel4, 1, 0);
-            tableLayoutPanel3.Dock = DockStyle.Fill;
-            tableLayoutPanel3.Location = new Point(0, 0);
-            tableLayoutPanel3.Name = "tableLayoutPanel3";
-            tableLayoutPanel3.RowCount = 1;
-            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel3.Size = new Size(770, 175);
-            tableLayoutPanel3.TabIndex = 0;
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { ID, Cliente, Fecha, Repartidor, Estado, Ruta });
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(3, 3);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(594, 169);
-            dataGridView1.TabIndex = 0;
-            // 
-            // ID
-            // 
-            ID.HeaderText = "ID";
-            ID.Name = "ID";
-            // 
-            // Cliente
-            // 
-            Cliente.HeaderText = "Cliente";
-            Cliente.Name = "Cliente";
-            // 
-            // Fecha
-            // 
-            Fecha.HeaderText = "Fecha";
-            Fecha.Name = "Fecha";
-            // 
-            // Repartidor
-            // 
-            Repartidor.HeaderText = "Repartidor";
-            Repartidor.Name = "Repartidor";
-            // 
-            // Estado
-            // 
-            Estado.HeaderText = "Estado";
-            Estado.Name = "Estado";
-            // 
-            // Ruta
-            // 
-            Ruta.HeaderText = "Ruta";
-            Ruta.Name = "Ruta";
-            // 
-            // panel4
-            // 
-            panel4.BackColor = Color.WhiteSmoke;
-            panel4.BorderStyle = BorderStyle.FixedSingle;
-            panel4.Controls.Add(label14);
-            panel4.Controls.Add(label13);
-            panel4.Controls.Add(label12);
-            panel4.Controls.Add(label11);
-            panel4.Controls.Add(label10);
-            panel4.Controls.Add(label9);
-            panel4.Controls.Add(label8);
-            panel4.Controls.Add(label7);
-            panel4.Controls.Add(label6);
-            panel4.Dock = DockStyle.Fill;
-            panel4.Location = new Point(603, 3);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(164, 169);
-            panel4.TabIndex = 1;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(44, 23);
-            label6.Name = "label6";
-            label6.Size = new Size(71, 21);
-            label6.TabIndex = 0;
-            label6.Text = "Pedidos";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(24, 62);
-            label7.Name = "label7";
-            label7.Size = new Size(47, 17);
-            label7.TabIndex = 1;
-            label7.Text = "Total: ";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(26, 88);
-            label8.Name = "label8";
-            label8.Size = new Size(75, 15);
-            label8.TabIndex = 2;
-            label8.Text = "Pendientes: ";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(26, 113);
-            label9.Name = "label9";
-            label9.Size = new Size(52, 15);
-            label9.TabIndex = 3;
-            label9.Text = "En ruta: ";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.Location = new Point(26, 140);
-            label10.Name = "label10";
-            label10.Size = new Size(67, 15);
-            label10.TabIndex = 4;
-            label10.Text = "Entegados:";
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.Location = new Point(79, 64);
-            label11.Name = "label11";
-            label11.Size = new Size(14, 15);
-            label11.TabIndex = 5;
-            label11.Text = "0";
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label12.Location = new Point(117, 88);
-            label12.Name = "label12";
-            label12.Size = new Size(14, 15);
-            label12.TabIndex = 6;
-            label12.Text = "0";
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label13.Location = new Point(87, 113);
-            label13.Name = "label13";
-            label13.Size = new Size(14, 15);
-            label13.TabIndex = 7;
-            label13.Text = "0";
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label14.Location = new Point(99, 140);
-            label14.Name = "label14";
-            label14.Size = new Size(14, 15);
-            label14.TabIndex = 8;
-            label14.Text = "0";
-            // 
             // FrmReportes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -441,15 +441,15 @@
             Text = "Reportes";
             panelContainer.ResumeLayout(false);
             panelContainer.PerformLayout();
-            panel2.ResumeLayout(false);
-            panelFiltros.ResumeLayout(false);
-            tableLayoutPanel1.ResumeLayout(false);
-            tableLayoutPanel1.PerformLayout();
             panel3.ResumeLayout(false);
             tableLayoutPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
+            panel2.ResumeLayout(false);
+            panelFiltros.ResumeLayout(false);
+            tableLayoutPanel1.ResumeLayout(false);
+            tableLayoutPanel1.PerformLayout();
             ResumeLayout(false);
         }
 

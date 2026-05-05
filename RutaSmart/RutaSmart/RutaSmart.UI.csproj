@@ -10,7 +10,9 @@
 
   <ItemGroup>
     <PackageReference Include="Aplicada1.Core" Version="1.0.0" />
+    <PackageReference Include="Azure.Identity" Version="1.21.0" />
     <PackageReference Include="HIC.System.Windows.Forms.DataVisualization" Version="1.0.1" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="7.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.7">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
