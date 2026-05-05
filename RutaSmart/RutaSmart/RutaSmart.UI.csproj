@@ -23,4 +23,8 @@
     <Folder Include="Services\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RutaSmart.Data\RutaSmart.Data.csproj" />
+  </ItemGroup>
+
 </Project>
