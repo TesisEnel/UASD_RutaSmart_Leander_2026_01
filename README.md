@@ -1,4 +1,4 @@
-\# RutaSmart
+# RutaSmart
 
 
 
@@ -10,7 +10,7 @@ Sistema de logística y control de entregas desarrollado en C#.
 
 
 
-\## Tecnologías usadas
+## Tecnologías usadas
 
 \- C#
 
