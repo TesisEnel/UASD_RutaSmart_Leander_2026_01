@@ -1,502 +1,532 @@
-﻿namespace RutaSmart.UI.Pedidos
+﻿using Guna.UI2.WinForms;
+
+namespace RutaSmart.UI.Pedidos
 {
     partial class Pedidos
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
             {
                 components.Dispose();
             }
+
             base.Dispose(disposing);
         }
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panelContainer = new Panel();
-            panel5 = new Panel();
-            dataGridView1 = new DataGridView();
-            IdPedido = new DataGridViewTextBoxColumn();
-            Cliente = new DataGridViewTextBoxColumn();
-            Repartidor = new DataGridViewTextBoxColumn();
-            Ruta = new DataGridViewTextBoxColumn();
-            FechaPedido = new DataGridViewTextBoxColumn();
-            DireccionRecoleccion = new DataGridViewTextBoxColumn();
-            DireccionEntrega = new DataGridViewTextBoxColumn();
-            panel2 = new Panel();
-            tableLayoutPanel1 = new TableLayoutPanel();
-            panel3 = new Panel();
-            textBox3 = new TextBox();
-            label8 = new Label();
-            dateTimePicker1 = new DateTimePicker();
-            label6 = new Label();
-            comboBox2 = new ComboBox();
-            label4 = new Label();
-            textBox1 = new TextBox();
-            label2 = new Label();
-            panel4 = new Panel();
-            textBox2 = new TextBox();
-            label7 = new Label();
-            comboBox3 = new ComboBox();
-            label5 = new Label();
-            comboBox1 = new ComboBox();
-            label3 = new Label();
-            panel6 = new Panel();
-            button5 = new Button();
-            button4 = new Button();
-            button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
-            panel1 = new Panel();
-            label1 = new Label();
+            pnlGrid = new Guna2Panel();
+            dgvPedidos = new Guna2DataGridView();
+            colId = new DataGridViewTextBoxColumn();
+            colCliente = new DataGridViewTextBoxColumn();
+            colRepartidor = new DataGridViewTextBoxColumn();
+            colRuta = new DataGridViewTextBoxColumn();
+            colFecha = new DataGridViewTextBoxColumn();
+            colReco = new DataGridViewTextBoxColumn();
+            colEntrega = new DataGridViewTextBoxColumn();
+            pnlFormulario = new Guna2Panel();
+            tableFormulario = new TableLayoutPanel();
+            txtIdPedido = new Guna2TextBox();
+            cmbCliente = new Guna2ComboBox();
+            cmbRuta = new Guna2ComboBox();
+            cmbRepartidor = new Guna2ComboBox();
+            dtpFechaPedido = new Guna2DateTimePicker();
+            txtDireccionEntrega = new Guna2TextBox();
+            txtDireccionRecoleccion = new Guna2TextBox();
+            flowBotones = new FlowLayoutPanel();
+            btnNuevo = new Guna2Button();
+            btnGuardar = new Guna2Button();
+            btnEditar = new Guna2Button();
+            btnLimpiar = new Guna2Button();
+            btnEliminar = new Guna2Button();
+            lblSubtitulo = new Label();
+            lblTitulo = new Label();
             panelContainer.SuspendLayout();
-            panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            panel2.SuspendLayout();
-            tableLayoutPanel1.SuspendLayout();
-            panel3.SuspendLayout();
-            panel4.SuspendLayout();
-            panel6.SuspendLayout();
+            pnlGrid.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvPedidos).BeginInit();
+            pnlFormulario.SuspendLayout();
+            tableFormulario.SuspendLayout();
+            flowBotones.SuspendLayout();
             SuspendLayout();
             // 
             // panelContainer
             // 
             panelContainer.BackColor = Color.White;
-            panelContainer.Controls.Add(panel5);
-            panelContainer.Controls.Add(panel2);
-            panelContainer.Controls.Add(panel1);
-            panelContainer.Controls.Add(label1);
+            panelContainer.Controls.Add(pnlGrid);
+            panelContainer.Controls.Add(pnlFormulario);
+            panelContainer.Controls.Add(lblSubtitulo);
+            panelContainer.Controls.Add(lblTitulo);
             panelContainer.Dock = DockStyle.Fill;
             panelContainer.Location = new Point(0, 0);
             panelContainer.Name = "panelContainer";
-            panelContainer.Padding = new Padding(15);
-            panelContainer.Size = new Size(800, 450);
+            panelContainer.Padding = new Padding(20);
+            panelContainer.Size = new Size(1100, 650);
             panelContainer.TabIndex = 0;
             // 
-            // panel5
-            // 
-            panel5.BorderStyle = BorderStyle.FixedSingle;
-            panel5.Controls.Add(dataGridView1);
-            panel5.Dock = DockStyle.Fill;
-            panel5.Location = new Point(15, 262);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(770, 173);
-            panel5.TabIndex = 3;
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { IdPedido, Cliente, Repartidor, Ruta, FechaPedido, DireccionRecoleccion, DireccionEntrega });
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(0, 0);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(768, 171);
-            dataGridView1.TabIndex = 0;
-            // 
-            // IdPedido
-            // 
-            IdPedido.HeaderText = "IdPedido";
-            IdPedido.Name = "IdPedido";
-            // 
-            // Cliente
-            // 
-            Cliente.HeaderText = "Cliente";
-            Cliente.Name = "Cliente";
-            // 
-            // Repartidor
-            // 
-            Repartidor.HeaderText = "Repartidor";
-            Repartidor.Name = "Repartidor";
-            // 
-            // Ruta
-            // 
-            Ruta.HeaderText = "Ruta";
-            Ruta.Name = "Ruta";
-            // 
-            // FechaPedido
-            // 
-            FechaPedido.HeaderText = "FechaPedido";
-            FechaPedido.Name = "FechaPedido";
-            // 
-            // DireccionRecoleccion
-            // 
-            DireccionRecoleccion.HeaderText = "Direccion de Recoleccion";
-            DireccionRecoleccion.Name = "DireccionRecoleccion";
-            // 
-            // DireccionEntrega
-            // 
-            DireccionEntrega.HeaderText = "Direccion de Entrega";
-            DireccionEntrega.Name = "DireccionEntrega";
-            // 
-            // panel2
-            // 
-            panel2.BorderStyle = BorderStyle.FixedSingle;
-            panel2.Controls.Add(tableLayoutPanel1);
-            panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(15, 42);
-            panel2.Name = "panel2";
-            panel2.Padding = new Padding(10);
-            panel2.Size = new Size(770, 220);
-            panel2.TabIndex = 2;
-            // 
-            // tableLayoutPanel1
-            // 
-            tableLayoutPanel1.ColumnCount = 3;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 35F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 35F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 30F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel1.Controls.Add(panel3, 0, 0);
-            tableLayoutPanel1.Controls.Add(panel4, 1, 0);
-            tableLayoutPanel1.Controls.Add(panel6, 2, 0);
-            tableLayoutPanel1.Dock = DockStyle.Fill;
-            tableLayoutPanel1.Location = new Point(10, 10);
-            tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 1;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.Size = new Size(748, 198);
-            tableLayoutPanel1.TabIndex = 0;
-            // 
-            // panel3
-            // 
-            panel3.AutoSize = true;
-            panel3.Controls.Add(textBox3);
-            panel3.Controls.Add(label8);
-            panel3.Controls.Add(dateTimePicker1);
-            panel3.Controls.Add(label6);
-            panel3.Controls.Add(comboBox2);
-            panel3.Controls.Add(label4);
-            panel3.Controls.Add(textBox1);
-            panel3.Controls.Add(label2);
-            panel3.Dock = DockStyle.Fill;
-            panel3.Location = new Point(3, 3);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(255, 192);
-            panel3.TabIndex = 0;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(16, 160);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(214, 23);
-            textBox3.TabIndex = 7;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(12, 131);
-            label8.Name = "label8";
-            label8.Size = new Size(117, 17);
-            label8.TabIndex = 6;
-            label8.Text = "Dirección Entrega";
-            // 
-            // dateTimePicker1
-            // 
-            dateTimePicker1.Format = DateTimePickerFormat.Short;
-            dateTimePicker1.Location = new Point(119, 100);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(100, 23);
-            dateTimePicker1.TabIndex = 5;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(10, 106);
-            label6.Name = "label6";
-            label6.Size = new Size(90, 17);
-            label6.TabIndex = 4;
-            label6.Text = "Fecha Pedido";
-            // 
-            // comboBox2
-            // 
-            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(88, 65);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(121, 23);
-            comboBox2.TabIndex = 3;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(10, 65);
-            label4.Name = "label4";
-            label4.Size = new Size(69, 17);
-            label4.TabIndex = 2;
-            label4.Text = "ID Cliente";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(86, 26);
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(144, 23);
-            textBox1.TabIndex = 1;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(9, 27);
-            label2.Name = "label2";
-            label2.Size = new Size(71, 17);
-            label2.TabIndex = 0;
-            label2.Text = "ID Pedido";
-            // 
-            // panel4
-            // 
-            panel4.AutoSize = true;
-            panel4.Controls.Add(textBox2);
-            panel4.Controls.Add(label7);
-            panel4.Controls.Add(comboBox3);
-            panel4.Controls.Add(label5);
-            panel4.Controls.Add(comboBox1);
-            panel4.Controls.Add(label3);
-            panel4.Dock = DockStyle.Fill;
-            panel4.Location = new Point(264, 3);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(255, 192);
-            panel4.TabIndex = 1;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(21, 130);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(218, 51);
-            textBox2.TabIndex = 5;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(21, 110);
-            label7.Name = "label7";
-            label7.Size = new Size(142, 17);
-            label7.TabIndex = 4;
-            label7.Text = "Dirección Recolección";
-            // 
-            // comboBox3
-            // 
-            comboBox3.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(118, 66);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(121, 23);
-            comboBox3.TabIndex = 3;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(21, 67);
-            label5.Name = "label5";
-            label5.Size = new Size(91, 17);
-            label5.TabIndex = 2;
-            label5.Text = "ID Repartidor";
-            // 
-            // comboBox1
-            // 
-            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(90, 26);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 1;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(21, 31);
-            label3.Name = "label3";
-            label3.Size = new Size(54, 17);
-            label3.TabIndex = 0;
-            label3.Text = "ID Ruta";
-            // 
-            // panel6
-            // 
-            panel6.Controls.Add(button5);
-            panel6.Controls.Add(button4);
-            panel6.Controls.Add(button3);
-            panel6.Controls.Add(button2);
-            panel6.Controls.Add(button1);
-            panel6.Dock = DockStyle.Fill;
-            panel6.Location = new Point(525, 3);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(220, 192);
-            panel6.TabIndex = 3;
-            // 
-            // button5
-            // 
-            button5.BackColor = Color.Olive;
-            button5.FlatAppearance.BorderSize = 0;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button5.ForeColor = Color.White;
-            button5.Location = new Point(63, 155);
-            button5.Name = "button5";
-            button5.Size = new Size(100, 28);
-            button5.TabIndex = 4;
-            button5.Text = "Eliminar";
-            button5.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            button4.BackColor = Color.DarkGray;
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(63, 120);
-            button4.Name = "button4";
-            button4.Size = new Size(100, 28);
-            button4.TabIndex = 3;
-            button4.Text = "Limpiar";
-            button4.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            button3.BackColor = Color.RosyBrown;
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(63, 86);
-            button3.Name = "button3";
-            button3.Size = new Size(100, 28);
-            button3.TabIndex = 2;
-            button3.Text = "Editar";
-            button3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.OrangeRed;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(63, 52);
-            button2.Name = "button2";
-            button2.Size = new Size(100, 28);
-            button2.TabIndex = 1;
-            button2.Text = "Guardar";
-            button2.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.SteelBlue;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(63, 16);
-            button1.Name = "button1";
-            button1.Size = new Size(100, 28);
-            button1.TabIndex = 0;
-            button1.Text = "Nuevo";
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // panel1
-            // 
-            panel1.BorderStyle = BorderStyle.FixedSingle;
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(15, 40);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(770, 2);
-            panel1.TabIndex = 1;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Dock = DockStyle.Top;
-            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(15, 15);
-            label1.Name = "label1";
-            label1.Size = new Size(182, 25);
-            label1.TabIndex = 0;
-            label1.Text = "Gestion de Pedidos";
+            // pnlGrid
+            // 
+            pnlGrid.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pnlGrid.Controls.Add(dgvPedidos);
+            pnlGrid.CustomizableEdges = customizableEdges1;
+            pnlGrid.Location = new Point(20, 380);
+            pnlGrid.Name = "pnlGrid";
+            pnlGrid.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            pnlGrid.Size = new Size(1050, 240);
+            pnlGrid.TabIndex = 3;
+            // 
+            // dgvPedidos
+            // 
+            dataGridViewCellStyle1.BackColor = Color.White;
+            dgvPedidos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(15, 23, 42);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dgvPedidos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dgvPedidos.ColumnHeadersHeight = 40;
+            dgvPedidos.Columns.AddRange(new DataGridViewColumn[] { colId, colCliente, colRepartidor, colRuta, colFecha, colReco, colEntrega });
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.White;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.ForeColor = Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            dgvPedidos.DefaultCellStyle = dataGridViewCellStyle3;
+            dgvPedidos.Dock = DockStyle.Fill;
+            dgvPedidos.GridColor = Color.LightGray;
+            dgvPedidos.Location = new Point(0, 0);
+            dgvPedidos.Name = "dgvPedidos";
+            dgvPedidos.RowHeadersVisible = false;
+            dgvPedidos.Size = new Size(1050, 240);
+            dgvPedidos.TabIndex = 0;
+            dgvPedidos.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
+            dgvPedidos.ThemeStyle.AlternatingRowsStyle.Font = null;
+            dgvPedidos.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
+            dgvPedidos.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
+            dgvPedidos.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
+            dgvPedidos.ThemeStyle.BackColor = Color.White;
+            dgvPedidos.ThemeStyle.GridColor = Color.LightGray;
+            dgvPedidos.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
+            dgvPedidos.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
+            dgvPedidos.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F);
+            dgvPedidos.ThemeStyle.HeaderStyle.ForeColor = Color.White;
+            dgvPedidos.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dgvPedidos.ThemeStyle.HeaderStyle.Height = 40;
+            dgvPedidos.ThemeStyle.ReadOnly = false;
+            dgvPedidos.ThemeStyle.RowsStyle.BackColor = Color.White;
+            dgvPedidos.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgvPedidos.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F);
+            dgvPedidos.ThemeStyle.RowsStyle.ForeColor = Color.Black;
+            dgvPedidos.ThemeStyle.RowsStyle.Height = 25;
+            dgvPedidos.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            dgvPedidos.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            // 
+            // colId
+            // 
+            colId.HeaderText = "ID";
+            colId.Name = "colId";
+            // 
+            // colCliente
+            // 
+            colCliente.HeaderText = "Cliente";
+            colCliente.Name = "colCliente";
+            // 
+            // colRepartidor
+            // 
+            colRepartidor.HeaderText = "Repartidor";
+            colRepartidor.Name = "colRepartidor";
+            // 
+            // colRuta
+            // 
+            colRuta.HeaderText = "Ruta";
+            colRuta.Name = "colRuta";
+            // 
+            // colFecha
+            // 
+            colFecha.HeaderText = "Fecha";
+            colFecha.Name = "colFecha";
+            // 
+            // colReco
+            // 
+            colReco.HeaderText = "Recolección";
+            colReco.Name = "colReco";
+            // 
+            // colEntrega
+            // 
+            colEntrega.HeaderText = "Entrega";
+            colEntrega.Name = "colEntrega";
+            // 
+            // pnlFormulario
+            // 
+            pnlFormulario.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pnlFormulario.BackColor = Color.Transparent;
+            pnlFormulario.BorderRadius = 18;
+            pnlFormulario.Controls.Add(tableFormulario);
+            pnlFormulario.CustomizableEdges = customizableEdges27;
+            pnlFormulario.FillColor = Color.White;
+            pnlFormulario.Location = new Point(20, 100);
+            pnlFormulario.Name = "pnlFormulario";
+            pnlFormulario.ShadowDecoration.CustomizableEdges = customizableEdges28;
+            pnlFormulario.ShadowDecoration.Enabled = true;
+            pnlFormulario.Size = new Size(1050, 260);
+            pnlFormulario.TabIndex = 2;
+            // 
+            // tableFormulario
+            // 
+            tableFormulario.ColumnCount = 3;
+            tableFormulario.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.33F));
+            tableFormulario.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.33F));
+            tableFormulario.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.34F));
+            tableFormulario.Controls.Add(txtIdPedido, 0, 0);
+            tableFormulario.Controls.Add(cmbCliente, 1, 0);
+            tableFormulario.Controls.Add(cmbRuta, 2, 0);
+            tableFormulario.Controls.Add(cmbRepartidor, 0, 1);
+            tableFormulario.Controls.Add(dtpFechaPedido, 1, 1);
+            tableFormulario.Controls.Add(txtDireccionEntrega, 2, 1);
+            tableFormulario.Controls.Add(txtDireccionRecoleccion, 0, 2);
+            tableFormulario.Controls.Add(flowBotones, 0, 3);
+            tableFormulario.Dock = DockStyle.Fill;
+            tableFormulario.Location = new Point(0, 0);
+            tableFormulario.Name = "tableFormulario";
+            tableFormulario.Padding = new Padding(20);
+            tableFormulario.RowCount = 4;
+            tableFormulario.RowStyles.Add(new RowStyle(SizeType.Absolute, 60F));
+            tableFormulario.RowStyles.Add(new RowStyle(SizeType.Absolute, 60F));
+            tableFormulario.RowStyles.Add(new RowStyle(SizeType.Absolute, 70F));
+            tableFormulario.RowStyles.Add(new RowStyle(SizeType.Absolute, 60F));
+            tableFormulario.Size = new Size(1050, 260);
+            tableFormulario.TabIndex = 0;
+            // 
+            // txtIdPedido
+            // 
+            txtIdPedido.BorderRadius = 10;
+            txtIdPedido.CustomizableEdges = customizableEdges3;
+            txtIdPedido.DefaultText = "";
+            txtIdPedido.Dock = DockStyle.Fill;
+            txtIdPedido.Font = new Font("Segoe UI", 9F);
+            txtIdPedido.Location = new Point(30, 30);
+            txtIdPedido.Margin = new Padding(10);
+            txtIdPedido.Name = "txtIdPedido";
+            txtIdPedido.PlaceholderText = "ID Pedido";
+            txtIdPedido.ReadOnly = true;
+            txtIdPedido.SelectedText = "";
+            txtIdPedido.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            txtIdPedido.Size = new Size(316, 40);
+            txtIdPedido.TabIndex = 0;
+            // 
+            // cmbCliente
+            // 
+            cmbCliente.BackColor = Color.Transparent;
+            cmbCliente.BorderRadius = 10;
+            cmbCliente.CustomizableEdges = customizableEdges5;
+            cmbCliente.Dock = DockStyle.Fill;
+            cmbCliente.DrawMode = DrawMode.OwnerDrawFixed;
+            cmbCliente.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbCliente.FocusedColor = Color.Empty;
+            cmbCliente.Font = new Font("Segoe UI", 10F);
+            cmbCliente.ForeColor = Color.FromArgb(68, 88, 112);
+            cmbCliente.FormattingEnabled = true;
+            cmbCliente.ItemHeight = 30;
+            cmbCliente.Location = new Point(366, 30);
+            cmbCliente.Margin = new Padding(10);
+            cmbCliente.Name = "cmbCliente";
+            cmbCliente.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            cmbCliente.Size = new Size(316, 36);
+            cmbCliente.TabIndex = 1;
+            // 
+            // cmbRuta
+            // 
+            cmbRuta.BackColor = Color.Transparent;
+            cmbRuta.BorderRadius = 10;
+            cmbRuta.CustomizableEdges = customizableEdges7;
+            cmbRuta.Dock = DockStyle.Fill;
+            cmbRuta.DrawMode = DrawMode.OwnerDrawFixed;
+            cmbRuta.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbRuta.FocusedColor = Color.Empty;
+            cmbRuta.Font = new Font("Segoe UI", 10F);
+            cmbRuta.ForeColor = Color.FromArgb(68, 88, 112);
+            cmbRuta.FormattingEnabled = true;
+            cmbRuta.ItemHeight = 30;
+            cmbRuta.Location = new Point(702, 30);
+            cmbRuta.Margin = new Padding(10);
+            cmbRuta.Name = "cmbRuta";
+            cmbRuta.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            cmbRuta.Size = new Size(318, 36);
+            cmbRuta.TabIndex = 2;
+            // 
+            // cmbRepartidor
+            // 
+            cmbRepartidor.BackColor = Color.Transparent;
+            cmbRepartidor.BorderRadius = 10;
+            cmbRepartidor.CustomizableEdges = customizableEdges9;
+            cmbRepartidor.Dock = DockStyle.Fill;
+            cmbRepartidor.DrawMode = DrawMode.OwnerDrawFixed;
+            cmbRepartidor.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbRepartidor.FocusedColor = Color.Empty;
+            cmbRepartidor.Font = new Font("Segoe UI", 10F);
+            cmbRepartidor.ForeColor = Color.FromArgb(68, 88, 112);
+            cmbRepartidor.FormattingEnabled = true;
+            cmbRepartidor.ItemHeight = 30;
+            cmbRepartidor.Location = new Point(30, 90);
+            cmbRepartidor.Margin = new Padding(10);
+            cmbRepartidor.Name = "cmbRepartidor";
+            cmbRepartidor.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            cmbRepartidor.Size = new Size(316, 36);
+            cmbRepartidor.TabIndex = 3;
+            // 
+            // dtpFechaPedido
+            // 
+            dtpFechaPedido.BorderRadius = 10;
+            dtpFechaPedido.Checked = true;
+            dtpFechaPedido.CustomizableEdges = customizableEdges11;
+            dtpFechaPedido.Dock = DockStyle.Fill;
+            dtpFechaPedido.Font = new Font("Segoe UI", 9F);
+            dtpFechaPedido.Format = DateTimePickerFormat.Short;
+            dtpFechaPedido.Location = new Point(366, 90);
+            dtpFechaPedido.Margin = new Padding(10);
+            dtpFechaPedido.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
+            dtpFechaPedido.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
+            dtpFechaPedido.Name = "dtpFechaPedido";
+            dtpFechaPedido.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            dtpFechaPedido.Size = new Size(316, 40);
+            dtpFechaPedido.TabIndex = 4;
+            dtpFechaPedido.Value = new DateTime(2026, 5, 9, 15, 52, 7, 37);
+            // 
+            // txtDireccionEntrega
+            // 
+            txtDireccionEntrega.BorderRadius = 10;
+            txtDireccionEntrega.CustomizableEdges = customizableEdges13;
+            txtDireccionEntrega.DefaultText = "";
+            txtDireccionEntrega.Dock = DockStyle.Fill;
+            txtDireccionEntrega.Font = new Font("Segoe UI", 9F);
+            txtDireccionEntrega.Location = new Point(702, 90);
+            txtDireccionEntrega.Margin = new Padding(10);
+            txtDireccionEntrega.Name = "txtDireccionEntrega";
+            txtDireccionEntrega.PlaceholderText = "Dirección de entrega";
+            txtDireccionEntrega.SelectedText = "";
+            txtDireccionEntrega.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            txtDireccionEntrega.Size = new Size(318, 40);
+            txtDireccionEntrega.TabIndex = 5;
+            // 
+            // txtDireccionRecoleccion
+            // 
+            txtDireccionRecoleccion.BorderRadius = 10;
+            tableFormulario.SetColumnSpan(txtDireccionRecoleccion, 3);
+            txtDireccionRecoleccion.CustomizableEdges = customizableEdges15;
+            txtDireccionRecoleccion.DefaultText = "";
+            txtDireccionRecoleccion.Dock = DockStyle.Fill;
+            txtDireccionRecoleccion.Font = new Font("Segoe UI", 9F);
+            txtDireccionRecoleccion.Location = new Point(30, 150);
+            txtDireccionRecoleccion.Margin = new Padding(10);
+            txtDireccionRecoleccion.Multiline = true;
+            txtDireccionRecoleccion.Name = "txtDireccionRecoleccion";
+            txtDireccionRecoleccion.PlaceholderText = "Dirección de recolección";
+            txtDireccionRecoleccion.SelectedText = "";
+            txtDireccionRecoleccion.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            txtDireccionRecoleccion.Size = new Size(990, 50);
+            txtDireccionRecoleccion.TabIndex = 6;
+            // 
+            // flowBotones
+            // 
+            tableFormulario.SetColumnSpan(flowBotones, 3);
+            flowBotones.Controls.Add(btnNuevo);
+            flowBotones.Controls.Add(btnGuardar);
+            flowBotones.Controls.Add(btnEditar);
+            flowBotones.Controls.Add(btnLimpiar);
+            flowBotones.Controls.Add(btnEliminar);
+            flowBotones.Dock = DockStyle.Fill;
+            flowBotones.Location = new Point(30, 220);
+            flowBotones.Margin = new Padding(10);
+            flowBotones.Name = "flowBotones";
+            flowBotones.Size = new Size(990, 40);
+            flowBotones.TabIndex = 7;
+            // 
+            // btnNuevo
+            // 
+            btnNuevo.BorderRadius = 10;
+            btnNuevo.CustomizableEdges = customizableEdges17;
+            btnNuevo.FillColor = Color.SteelBlue;
+            btnNuevo.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnNuevo.ForeColor = Color.White;
+            btnNuevo.Location = new Point(3, 3);
+            btnNuevo.Name = "btnNuevo";
+            btnNuevo.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            btnNuevo.Size = new Size(110, 40);
+            btnNuevo.TabIndex = 0;
+            btnNuevo.Text = "Nuevo";
+            // 
+            // btnGuardar
+            // 
+            btnGuardar.BorderRadius = 10;
+            btnGuardar.CustomizableEdges = customizableEdges19;
+            btnGuardar.FillColor = Color.FromArgb(37, 99, 235);
+            btnGuardar.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnGuardar.ForeColor = Color.White;
+            btnGuardar.Location = new Point(119, 3);
+            btnGuardar.Name = "btnGuardar";
+            btnGuardar.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            btnGuardar.Size = new Size(110, 40);
+            btnGuardar.TabIndex = 1;
+            btnGuardar.Text = "Guardar";
+            // 
+            // btnEditar
+            // 
+            btnEditar.BorderRadius = 10;
+            btnEditar.CustomizableEdges = customizableEdges21;
+            btnEditar.FillColor = Color.Gray;
+            btnEditar.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnEditar.ForeColor = Color.White;
+            btnEditar.Location = new Point(235, 3);
+            btnEditar.Name = "btnEditar";
+            btnEditar.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            btnEditar.Size = new Size(110, 40);
+            btnEditar.TabIndex = 2;
+            btnEditar.Text = "Editar";
+            // 
+            // btnLimpiar
+            // 
+            btnLimpiar.BorderRadius = 10;
+            btnLimpiar.CustomizableEdges = customizableEdges23;
+            btnLimpiar.FillColor = Color.FromArgb(249, 115, 22);
+            btnLimpiar.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnLimpiar.ForeColor = Color.White;
+            btnLimpiar.Location = new Point(351, 3);
+            btnLimpiar.Name = "btnLimpiar";
+            btnLimpiar.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            btnLimpiar.Size = new Size(110, 40);
+            btnLimpiar.TabIndex = 3;
+            btnLimpiar.Text = "Limpiar";
+            // 
+            // btnEliminar
+            // 
+            btnEliminar.BorderRadius = 10;
+            btnEliminar.CustomizableEdges = customizableEdges25;
+            btnEliminar.FillColor = Color.OliveDrab;
+            btnEliminar.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnEliminar.ForeColor = Color.White;
+            btnEliminar.Location = new Point(467, 3);
+            btnEliminar.Name = "btnEliminar";
+            btnEliminar.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            btnEliminar.Size = new Size(110, 40);
+            btnEliminar.TabIndex = 4;
+            btnEliminar.Text = "Eliminar";
+            // 
+            // lblSubtitulo
+            // 
+            lblSubtitulo.AutoSize = true;
+            lblSubtitulo.Font = new Font("Segoe UI", 10F);
+            lblSubtitulo.ForeColor = Color.Gray;
+            lblSubtitulo.Location = new Point(22, 68);
+            lblSubtitulo.Name = "lblSubtitulo";
+            lblSubtitulo.Size = new Size(251, 19);
+            lblSubtitulo.TabIndex = 1;
+            lblSubtitulo.Text = "Administra los pedidos de la plataforma";
+            // 
+            // lblTitulo
+            // 
+            lblTitulo.AutoSize = true;
+            lblTitulo.Font = new Font("Segoe UI", 22F, FontStyle.Bold);
+            lblTitulo.ForeColor = Color.FromArgb(30, 41, 59);
+            lblTitulo.Location = new Point(20, 20);
+            lblTitulo.Name = "lblTitulo";
+            lblTitulo.Size = new Size(129, 41);
+            lblTitulo.TabIndex = 0;
+            lblTitulo.Text = "Pedidos";
             // 
             // Pedidos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1100, 650);
             Controls.Add(panelContainer);
             FormBorderStyle = FormBorderStyle.None;
+            MinimumSize = new Size(900, 600);
             Name = "Pedidos";
             Text = "Pedidos";
             panelContainer.ResumeLayout(false);
             panelContainer.PerformLayout();
-            panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            panel2.ResumeLayout(false);
-            tableLayoutPanel1.ResumeLayout(false);
-            tableLayoutPanel1.PerformLayout();
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            panel4.ResumeLayout(false);
-            panel4.PerformLayout();
-            panel6.ResumeLayout(false);
+            pnlGrid.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvPedidos).EndInit();
+            pnlFormulario.ResumeLayout(false);
+            tableFormulario.ResumeLayout(false);
+            flowBotones.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
         private Panel panelContainer;
-        private Panel panel1;
-        private Label label1;
-        private Panel panel2;
-        private TableLayoutPanel tableLayoutPanel1;
-        private Panel panel3;
-        private Label label2;
-        private TextBox textBox1;
-        private Panel panel4;
-        private Panel panel6;
-        private ComboBox comboBox2;
-        private Label label4;
-        private ComboBox comboBox1;
-        private Label label3;
-        private Label label6;
-        private ComboBox comboBox3;
-        private Label label5;
-        private TextBox textBox3;
-        private Label label8;
-        private DateTimePicker dateTimePicker1;
-        private TextBox textBox2;
-        private Label label7;
-        private Button button1;
-        private Button button2;
-        private Button button4;
-        private Button button3;
-        private Button button5;
-        private Panel panel5;
-        private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn IdPedido;
-        private DataGridViewTextBoxColumn Cliente;
-        private DataGridViewTextBoxColumn Repartidor;
-        private DataGridViewTextBoxColumn Ruta;
-        private DataGridViewTextBoxColumn FechaPedido;
-        private DataGridViewTextBoxColumn DireccionRecoleccion;
-        private DataGridViewTextBoxColumn DireccionEntrega;
+
+        private Label lblTitulo;
+        private Label lblSubtitulo;
+
+        private Guna2Panel pnlFormulario;
+        private TableLayoutPanel tableFormulario;
+
+        private Guna2TextBox txtIdPedido;
+        private Guna2ComboBox cmbCliente;
+        private Guna2ComboBox cmbRuta;
+        private Guna2ComboBox cmbRepartidor;
+
+        private Guna2DateTimePicker dtpFechaPedido;
+
+        private Guna2TextBox txtDireccionEntrega;
+        private Guna2TextBox txtDireccionRecoleccion;
+
+        private FlowLayoutPanel flowBotones;
+
+        private Guna2Button btnNuevo;
+        private Guna2Button btnGuardar;
+        private Guna2Button btnEditar;
+        private Guna2Button btnLimpiar;
+        private Guna2Button btnEliminar;
+
+        private Guna2Panel pnlGrid;
+        private Guna2DataGridView dgvPedidos;
+
+        private DataGridViewTextBoxColumn colId;
+        private DataGridViewTextBoxColumn colCliente;
+        private DataGridViewTextBoxColumn colRepartidor;
+        private DataGridViewTextBoxColumn colRuta;
+        private DataGridViewTextBoxColumn colFecha;
+        private DataGridViewTextBoxColumn colReco;
+        private DataGridViewTextBoxColumn colEntrega;
     }
 }
