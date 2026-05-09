@@ -1,126 +1,180 @@
-﻿namespace RutaSmart.UI.Reportes
+﻿using Guna.UI2.WinForms;
+
+namespace RutaSmart.UI.Reportes
 {
     partial class FrmReportes
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
             {
                 components.Dispose();
             }
+
             base.Dispose(disposing);
         }
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panelContainer = new Panel();
-            panel3 = new Panel();
-            tableLayoutPanel3 = new TableLayoutPanel();
-            dataGridView1 = new DataGridView();
+            pnlGrid = new Guna2Panel();
+            tableGrid = new TableLayoutPanel();
+            dgvReportes = new Guna2DataGridView();
             ID = new DataGridViewTextBoxColumn();
             Cliente = new DataGridViewTextBoxColumn();
             Fecha = new DataGridViewTextBoxColumn();
             Repartidor = new DataGridViewTextBoxColumn();
             Estado = new DataGridViewTextBoxColumn();
             Ruta = new DataGridViewTextBoxColumn();
-            panel4 = new Panel();
-            label14 = new Label();
-            label13 = new Label();
-            label12 = new Label();
-            label11 = new Label();
-            label10 = new Label();
-            label9 = new Label();
-            label8 = new Label();
-            label7 = new Label();
-            label6 = new Label();
-            panel2 = new Panel();
-            tableLayoutPanel2 = new TableLayoutPanel();
-            panelFiltros = new Panel();
-            tableLayoutPanel1 = new TableLayoutPanel();
-            label2 = new Label();
-            dateTimePicker2 = new DateTimePicker();
-            comboBox1 = new ComboBox();
-            label4 = new Label();
-            dateTimePicker1 = new DateTimePicker();
-            label5 = new Label();
-            label3 = new Label();
-            button1 = new Button();
-            panel1 = new Panel();
-            label1 = new Label();
+            panelResumen = new Guna2Panel();
+            lblResumen = new Label();
+            lblTotalText = new Label();
+            lblPendientesText = new Label();
+            lblRutaText = new Label();
+            lblEntregadosText = new Label();
+            lblTotal = new Label();
+            lblPendientes = new Label();
+            lblRuta = new Label();
+            lblEntregados = new Label();
+            pnlGraficos = new Guna2Panel();
+            tableGraficos = new TableLayoutPanel();
+            pnlFiltros = new Guna2Panel();
+            tableFiltros = new TableLayoutPanel();
+            lblDesde = new Label();
+            lblHasta = new Label();
+            lblTipo = new Label();
+            dtDesde = new Guna2DateTimePicker();
+            dtHasta = new Guna2DateTimePicker();
+            cmbTipoReporte = new Guna2ComboBox();
+            btnGenerar = new Guna2Button();
+            lblSubtitulo = new Label();
+            lblTitulo = new Label();
             panelContainer.SuspendLayout();
-            panel3.SuspendLayout();
-            tableLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            panel4.SuspendLayout();
-            panel2.SuspendLayout();
-            panelFiltros.SuspendLayout();
-            tableLayoutPanel1.SuspendLayout();
+            pnlGrid.SuspendLayout();
+            tableGrid.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvReportes).BeginInit();
+            panelResumen.SuspendLayout();
+            pnlGraficos.SuspendLayout();
+            pnlFiltros.SuspendLayout();
+            tableFiltros.SuspendLayout();
             SuspendLayout();
             // 
             // panelContainer
             // 
-            panelContainer.BackColor = Color.White;
-            panelContainer.Controls.Add(panel3);
-            panelContainer.Controls.Add(panel2);
-            panelContainer.Controls.Add(panelFiltros);
-            panelContainer.Controls.Add(panel1);
-            panelContainer.Controls.Add(label1);
+            panelContainer.BackColor = Color.FromArgb(245, 247, 250);
+            panelContainer.Controls.Add(pnlGrid);
+            panelContainer.Controls.Add(pnlGraficos);
+            panelContainer.Controls.Add(pnlFiltros);
+            panelContainer.Controls.Add(lblSubtitulo);
+            panelContainer.Controls.Add(lblTitulo);
             panelContainer.Dock = DockStyle.Fill;
             panelContainer.Location = new Point(0, 0);
             panelContainer.Name = "panelContainer";
-            panelContainer.Padding = new Padding(15);
-            panelContainer.Size = new Size(800, 525);
+            panelContainer.Padding = new Padding(20);
+            panelContainer.Size = new Size(1200, 700);
             panelContainer.TabIndex = 0;
             // 
-            // panel3
+            // pnlGrid
             // 
-            panel3.Controls.Add(tableLayoutPanel3);
-            panel3.Dock = DockStyle.Top;
-            panel3.Location = new Point(15, 342);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(770, 175);
-            panel3.TabIndex = 4;
+            pnlGrid.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pnlGrid.BackColor = Color.Transparent;
+            pnlGrid.BorderRadius = 20;
+            pnlGrid.Controls.Add(tableGrid);
+            pnlGrid.CustomizableEdges = customizableEdges3;
+            pnlGrid.FillColor = Color.White;
+            pnlGrid.Location = new Point(20, 480);
+            pnlGrid.Name = "pnlGrid";
+            pnlGrid.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            pnlGrid.ShadowDecoration.Enabled = true;
+            pnlGrid.Size = new Size(1160, 190);
+            pnlGrid.TabIndex = 4;
             // 
-            // tableLayoutPanel3
+            // tableGrid
             // 
-            tableLayoutPanel3.ColumnCount = 2;
-            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 78F));
-            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 22F));
-            tableLayoutPanel3.Controls.Add(dataGridView1, 0, 0);
-            tableLayoutPanel3.Controls.Add(panel4, 1, 0);
-            tableLayoutPanel3.Dock = DockStyle.Fill;
-            tableLayoutPanel3.Location = new Point(0, 0);
-            tableLayoutPanel3.Name = "tableLayoutPanel3";
-            tableLayoutPanel3.RowCount = 1;
-            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel3.Size = new Size(770, 175);
-            tableLayoutPanel3.TabIndex = 0;
+            tableGrid.ColumnCount = 2;
+            tableGrid.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 78F));
+            tableGrid.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 22F));
+            tableGrid.Controls.Add(dgvReportes, 0, 0);
+            tableGrid.Controls.Add(panelResumen, 1, 0);
+            tableGrid.Dock = DockStyle.Fill;
+            tableGrid.Location = new Point(0, 0);
+            tableGrid.Name = "tableGrid";
+            tableGrid.Padding = new Padding(10);
+            tableGrid.RowCount = 1;
+            tableGrid.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableGrid.Size = new Size(1160, 190);
+            tableGrid.TabIndex = 0;
             // 
-            // dataGridView1
+            // dgvReportes
             // 
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { ID, Cliente, Fecha, Repartidor, Estado, Ruta });
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(3, 3);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(594, 169);
-            dataGridView1.TabIndex = 0;
+            dataGridViewCellStyle1.BackColor = Color.White;
+            dgvReportes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(15, 23, 42);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dgvReportes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dgvReportes.ColumnHeadersHeight = 40;
+            dgvReportes.Columns.AddRange(new DataGridViewColumn[] { ID, Cliente, Fecha, Repartidor, Estado, Ruta });
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.White;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.ForeColor = Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            dgvReportes.DefaultCellStyle = dataGridViewCellStyle3;
+            dgvReportes.Dock = DockStyle.Fill;
+            dgvReportes.GridColor = Color.FromArgb(231, 229, 255);
+            dgvReportes.Location = new Point(13, 13);
+            dgvReportes.Name = "dgvReportes";
+            dgvReportes.RowHeadersVisible = false;
+            dgvReportes.Size = new Size(883, 164);
+            dgvReportes.TabIndex = 0;
+            dgvReportes.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
+            dgvReportes.ThemeStyle.AlternatingRowsStyle.Font = null;
+            dgvReportes.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
+            dgvReportes.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
+            dgvReportes.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
+            dgvReportes.ThemeStyle.BackColor = Color.White;
+            dgvReportes.ThemeStyle.GridColor = Color.FromArgb(231, 229, 255);
+            dgvReportes.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
+            dgvReportes.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
+            dgvReportes.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F);
+            dgvReportes.ThemeStyle.HeaderStyle.ForeColor = Color.White;
+            dgvReportes.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dgvReportes.ThemeStyle.HeaderStyle.Height = 40;
+            dgvReportes.ThemeStyle.ReadOnly = false;
+            dgvReportes.ThemeStyle.RowsStyle.BackColor = Color.White;
+            dgvReportes.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgvReportes.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F);
+            dgvReportes.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(71, 69, 94);
+            dgvReportes.ThemeStyle.RowsStyle.Height = 25;
+            dgvReportes.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            dgvReportes.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
             // 
             // ID
             // 
@@ -152,342 +206,385 @@
             Ruta.HeaderText = "Ruta";
             Ruta.Name = "Ruta";
             // 
-            // panel4
+            // panelResumen
             // 
-            panel4.BackColor = Color.WhiteSmoke;
-            panel4.BorderStyle = BorderStyle.FixedSingle;
-            panel4.Controls.Add(label14);
-            panel4.Controls.Add(label13);
-            panel4.Controls.Add(label12);
-            panel4.Controls.Add(label11);
-            panel4.Controls.Add(label10);
-            panel4.Controls.Add(label9);
-            panel4.Controls.Add(label8);
-            panel4.Controls.Add(label7);
-            panel4.Controls.Add(label6);
-            panel4.Dock = DockStyle.Fill;
-            panel4.Location = new Point(603, 3);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(164, 169);
-            panel4.TabIndex = 1;
+            panelResumen.BorderRadius = 15;
+            panelResumen.Controls.Add(lblResumen);
+            panelResumen.Controls.Add(lblTotalText);
+            panelResumen.Controls.Add(lblPendientesText);
+            panelResumen.Controls.Add(lblRutaText);
+            panelResumen.Controls.Add(lblEntregadosText);
+            panelResumen.Controls.Add(lblTotal);
+            panelResumen.Controls.Add(lblPendientes);
+            panelResumen.Controls.Add(lblRuta);
+            panelResumen.Controls.Add(lblEntregados);
+            panelResumen.CustomizableEdges = customizableEdges1;
+            panelResumen.Dock = DockStyle.Fill;
+            panelResumen.FillColor = Color.FromArgb(248, 250, 252);
+            panelResumen.Location = new Point(902, 13);
+            panelResumen.Name = "panelResumen";
+            panelResumen.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            panelResumen.Size = new Size(245, 164);
+            panelResumen.TabIndex = 1;
             // 
-            // label14
+            // lblResumen
             // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label14.Location = new Point(99, 140);
-            label14.Name = "label14";
-            label14.Size = new Size(14, 15);
-            label14.TabIndex = 8;
-            label14.Text = "0";
+            lblResumen.AutoSize = true;
+            lblResumen.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            lblResumen.Location = new Point(60, 15);
+            lblResumen.Name = "lblResumen";
+            lblResumen.Size = new Size(80, 21);
+            lblResumen.TabIndex = 0;
+            lblResumen.Text = "Resumen";
             // 
-            // label13
+            // lblTotalText
             // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label13.Location = new Point(87, 113);
-            label13.Name = "label13";
-            label13.Size = new Size(14, 15);
-            label13.TabIndex = 7;
-            label13.Text = "0";
+            lblTotalText.AutoSize = true;
+            lblTotalText.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblTotalText.Location = new Point(20, 50);
+            lblTotalText.Name = "lblTotalText";
+            lblTotalText.Size = new Size(37, 15);
+            lblTotalText.TabIndex = 1;
+            lblTotalText.Text = "Total:";
             // 
-            // label12
+            // lblPendientesText
             // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label12.Location = new Point(117, 88);
-            label12.Name = "label12";
-            label12.Size = new Size(14, 15);
-            label12.TabIndex = 6;
-            label12.Text = "0";
+            lblPendientesText.AutoSize = true;
+            lblPendientesText.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblPendientesText.Location = new Point(20, 75);
+            lblPendientesText.Name = "lblPendientesText";
+            lblPendientesText.Size = new Size(72, 15);
+            lblPendientesText.TabIndex = 2;
+            lblPendientesText.Text = "Pendientes:";
             // 
-            // label11
+            // lblRutaText
             // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.Location = new Point(79, 64);
-            label11.Name = "label11";
-            label11.Size = new Size(14, 15);
-            label11.TabIndex = 5;
-            label11.Text = "0";
+            lblRutaText.AutoSize = true;
+            lblRutaText.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblRutaText.Location = new Point(20, 100);
+            lblRutaText.Name = "lblRutaText";
+            lblRutaText.Size = new Size(49, 15);
+            lblRutaText.TabIndex = 3;
+            lblRutaText.Text = "En ruta:";
             // 
-            // label10
+            // lblEntregadosText
             // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.Location = new Point(26, 140);
-            label10.Name = "label10";
-            label10.Size = new Size(67, 15);
-            label10.TabIndex = 4;
-            label10.Text = "Entegados:";
+            lblEntregadosText.AutoSize = true;
+            lblEntregadosText.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblEntregadosText.Location = new Point(20, 125);
+            lblEntregadosText.Name = "lblEntregadosText";
+            lblEntregadosText.Size = new Size(72, 15);
+            lblEntregadosText.TabIndex = 4;
+            lblEntregadosText.Text = "Entregados:";
             // 
-            // label9
+            // lblTotal
             // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(26, 113);
-            label9.Name = "label9";
-            label9.Size = new Size(52, 15);
-            label9.TabIndex = 3;
-            label9.Text = "En ruta: ";
+            lblTotal.AutoSize = true;
+            lblTotal.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblTotal.Location = new Point(130, 50);
+            lblTotal.Name = "lblTotal";
+            lblTotal.Size = new Size(14, 15);
+            lblTotal.TabIndex = 5;
+            lblTotal.Text = "0";
             // 
-            // label8
+            // lblPendientes
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(26, 88);
-            label8.Name = "label8";
-            label8.Size = new Size(75, 15);
-            label8.TabIndex = 2;
-            label8.Text = "Pendientes: ";
+            lblPendientes.AutoSize = true;
+            lblPendientes.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblPendientes.Location = new Point(130, 75);
+            lblPendientes.Name = "lblPendientes";
+            lblPendientes.Size = new Size(14, 15);
+            lblPendientes.TabIndex = 6;
+            lblPendientes.Text = "0";
             // 
-            // label7
+            // lblRuta
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(24, 62);
-            label7.Name = "label7";
-            label7.Size = new Size(47, 17);
-            label7.TabIndex = 1;
-            label7.Text = "Total: ";
+            lblRuta.AutoSize = true;
+            lblRuta.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblRuta.Location = new Point(130, 100);
+            lblRuta.Name = "lblRuta";
+            lblRuta.Size = new Size(14, 15);
+            lblRuta.TabIndex = 7;
+            lblRuta.Text = "0";
             // 
-            // label6
+            // lblEntregados
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(44, 23);
-            label6.Name = "label6";
-            label6.Size = new Size(71, 21);
-            label6.TabIndex = 0;
-            label6.Text = "Pedidos";
+            lblEntregados.AutoSize = true;
+            lblEntregados.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblEntregados.Location = new Point(130, 125);
+            lblEntregados.Name = "lblEntregados";
+            lblEntregados.Size = new Size(14, 15);
+            lblEntregados.TabIndex = 8;
+            lblEntregados.Text = "0";
             // 
-            // panel2
+            // pnlGraficos
             // 
-            panel2.Controls.Add(tableLayoutPanel2);
-            panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(15, 142);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(770, 200);
-            panel2.TabIndex = 3;
+            pnlGraficos.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pnlGraficos.BackColor = Color.Transparent;
+            pnlGraficos.BorderRadius = 20;
+            pnlGraficos.Controls.Add(tableGraficos);
+            pnlGraficos.CustomizableEdges = customizableEdges5;
+            pnlGraficos.FillColor = Color.White;
+            pnlGraficos.Location = new Point(20, 240);
+            pnlGraficos.Name = "pnlGraficos";
+            pnlGraficos.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            pnlGraficos.ShadowDecoration.Enabled = true;
+            pnlGraficos.Size = new Size(1160, 220);
+            pnlGraficos.TabIndex = 3;
             // 
-            // tableLayoutPanel2
+            // tableGraficos
             // 
-            tableLayoutPanel2.ColumnCount = 2;
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel2.Dock = DockStyle.Fill;
-            tableLayoutPanel2.Location = new Point(0, 0);
-            tableLayoutPanel2.Name = "tableLayoutPanel2";
-            tableLayoutPanel2.RowCount = 1;
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel2.Size = new Size(770, 200);
-            tableLayoutPanel2.TabIndex = 0;
+            tableGraficos.ColumnCount = 2;
+            tableGraficos.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableGraficos.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableGraficos.Dock = DockStyle.Fill;
+            tableGraficos.Location = new Point(0, 0);
+            tableGraficos.Name = "tableGraficos";
+            tableGraficos.Padding = new Padding(10);
+            tableGraficos.RowCount = 1;
+            tableGraficos.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableGraficos.Size = new Size(1160, 220);
+            tableGraficos.TabIndex = 0;
             // 
-            // panelFiltros
+            // pnlFiltros
             // 
-            panelFiltros.BorderStyle = BorderStyle.FixedSingle;
-            panelFiltros.Controls.Add(tableLayoutPanel1);
-            panelFiltros.Dock = DockStyle.Top;
-            panelFiltros.Location = new Point(15, 42);
-            panelFiltros.Name = "panelFiltros";
-            panelFiltros.Padding = new Padding(10);
-            panelFiltros.Size = new Size(770, 100);
-            panelFiltros.TabIndex = 2;
+            pnlFiltros.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pnlFiltros.BackColor = Color.Transparent;
+            pnlFiltros.BorderRadius = 20;
+            pnlFiltros.Controls.Add(tableFiltros);
+            pnlFiltros.CustomizableEdges = customizableEdges15;
+            pnlFiltros.FillColor = Color.White;
+            pnlFiltros.Location = new Point(20, 100);
+            pnlFiltros.Name = "pnlFiltros";
+            pnlFiltros.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            pnlFiltros.ShadowDecoration.Enabled = true;
+            pnlFiltros.Size = new Size(1160, 120);
+            pnlFiltros.TabIndex = 2;
             // 
-            // tableLayoutPanel1
+            // tableFiltros
             // 
-            tableLayoutPanel1.ColumnCount = 4;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 30F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
-            tableLayoutPanel1.Controls.Add(label2, 0, 0);
-            tableLayoutPanel1.Controls.Add(dateTimePicker2, 1, 2);
-            tableLayoutPanel1.Controls.Add(comboBox1, 2, 2);
-            tableLayoutPanel1.Controls.Add(label4, 1, 1);
-            tableLayoutPanel1.Controls.Add(dateTimePicker1, 0, 2);
-            tableLayoutPanel1.Controls.Add(label5, 2, 1);
-            tableLayoutPanel1.Controls.Add(label3, 0, 1);
-            tableLayoutPanel1.Controls.Add(button1, 3, 2);
-            tableLayoutPanel1.Dock = DockStyle.Fill;
-            tableLayoutPanel1.Location = new Point(10, 10);
-            tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 3;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 30F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 30F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 40F));
-            tableLayoutPanel1.Size = new Size(748, 78);
-            tableLayoutPanel1.TabIndex = 8;
+            tableFiltros.ColumnCount = 4;
+            tableFiltros.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableFiltros.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableFiltros.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 30F));
+            tableFiltros.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            tableFiltros.Controls.Add(lblDesde, 0, 0);
+            tableFiltros.Controls.Add(lblHasta, 1, 0);
+            tableFiltros.Controls.Add(lblTipo, 2, 0);
+            tableFiltros.Controls.Add(dtDesde, 0, 1);
+            tableFiltros.Controls.Add(dtHasta, 1, 1);
+            tableFiltros.Controls.Add(cmbTipoReporte, 2, 1);
+            tableFiltros.Controls.Add(btnGenerar, 3, 1);
+            tableFiltros.Dock = DockStyle.Fill;
+            tableFiltros.Location = new Point(0, 0);
+            tableFiltros.Name = "tableFiltros";
+            tableFiltros.Padding = new Padding(20);
+            tableFiltros.RowCount = 2;
+            tableFiltros.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F));
+            tableFiltros.RowStyles.Add(new RowStyle(SizeType.Absolute, 50F));
+            tableFiltros.Size = new Size(1160, 120);
+            tableFiltros.TabIndex = 0;
             // 
-            // label2
+            // lblDesde
             // 
-            label2.Anchor = AnchorStyles.None;
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(34, 3);
-            label2.Name = "label2";
-            label2.Size = new Size(119, 17);
-            label2.TabIndex = 0;
-            label2.Text = "Filtros del reporte";
+            lblDesde.Anchor = AnchorStyles.Left;
+            lblDesde.AutoSize = true;
+            lblDesde.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblDesde.Location = new Point(23, 27);
+            lblDesde.Name = "lblDesde";
+            lblDesde.Size = new Size(75, 15);
+            lblDesde.TabIndex = 0;
+            lblDesde.Text = "Fecha desde";
             // 
-            // dateTimePicker2
+            // lblHasta
             // 
-            dateTimePicker2.Anchor = AnchorStyles.None;
-            dateTimePicker2.Format = DateTimePickerFormat.Short;
-            dateTimePicker2.Location = new Point(220, 50);
-            dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(120, 23);
-            dateTimePicker2.TabIndex = 4;
+            lblHasta.Anchor = AnchorStyles.Left;
+            lblHasta.AutoSize = true;
+            lblHasta.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblHasta.Location = new Point(303, 27);
+            lblHasta.Name = "lblHasta";
+            lblHasta.Size = new Size(71, 15);
+            lblHasta.TabIndex = 1;
+            lblHasta.Text = "Fecha hasta";
             // 
-            // comboBox1
+            // lblTipo
             // 
-            comboBox1.Anchor = AnchorStyles.None;
-            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Resumen general", "", "Por cliente", "", "Por repartidor", "", "Por fecha" });
-            comboBox1.Location = new Point(425, 50);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 6;
+            lblTipo.Anchor = AnchorStyles.Left;
+            lblTipo.AutoSize = true;
+            lblTipo.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblTipo.Location = new Point(583, 27);
+            lblTipo.Name = "lblTipo";
+            lblTipo.Size = new Size(94, 15);
+            lblTipo.TabIndex = 2;
+            lblTipo.Text = "Tipo de reporte";
             // 
-            // label4
+            // dtDesde
             // 
-            label4.Anchor = AnchorStyles.None;
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(243, 27);
-            label4.Name = "label4";
-            label4.Size = new Size(74, 15);
-            label4.TabIndex = 3;
-            label4.Text = "Fecha hasta:";
+            dtDesde.BorderRadius = 10;
+            dtDesde.Checked = true;
+            dtDesde.CustomizableEdges = customizableEdges7;
+            dtDesde.Dock = DockStyle.Fill;
+            dtDesde.Font = new Font("Segoe UI", 9F);
+            dtDesde.Format = DateTimePickerFormat.Short;
+            dtDesde.Location = new Point(30, 60);
+            dtDesde.Margin = new Padding(10);
+            dtDesde.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
+            dtDesde.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
+            dtDesde.Name = "dtDesde";
+            dtDesde.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            dtDesde.Size = new Size(260, 30);
+            dtDesde.TabIndex = 3;
+            dtDesde.Value = new DateTime(2026, 5, 9, 16, 56, 36, 290);
             // 
-            // dateTimePicker1
+            // dtHasta
             // 
-            dateTimePicker1.Anchor = AnchorStyles.None;
-            dateTimePicker1.Format = DateTimePickerFormat.Short;
-            dateTimePicker1.Location = new Point(33, 50);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(120, 23);
-            dateTimePicker1.TabIndex = 2;
+            dtHasta.BorderRadius = 10;
+            dtHasta.Checked = true;
+            dtHasta.CustomizableEdges = customizableEdges9;
+            dtHasta.Dock = DockStyle.Fill;
+            dtHasta.Font = new Font("Segoe UI", 9F);
+            dtHasta.Format = DateTimePickerFormat.Short;
+            dtHasta.Location = new Point(310, 60);
+            dtHasta.Margin = new Padding(10);
+            dtHasta.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
+            dtHasta.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
+            dtHasta.Name = "dtHasta";
+            dtHasta.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            dtHasta.Size = new Size(260, 30);
+            dtHasta.TabIndex = 4;
+            dtHasta.Value = new DateTime(2026, 5, 9, 16, 56, 36, 341);
             // 
-            // label5
+            // cmbTipoReporte
             // 
-            label5.Anchor = AnchorStyles.None;
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(443, 27);
-            label5.Name = "label5";
-            label5.Size = new Size(85, 15);
-            label5.TabIndex = 5;
-            label5.Text = "Tipo Reportes";
+            cmbTipoReporte.BackColor = Color.Transparent;
+            cmbTipoReporte.BorderRadius = 10;
+            cmbTipoReporte.CustomizableEdges = customizableEdges11;
+            cmbTipoReporte.DrawMode = DrawMode.OwnerDrawFixed;
+            cmbTipoReporte.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbTipoReporte.FocusedColor = Color.FromArgb(94, 148, 255);
+            cmbTipoReporte.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            cmbTipoReporte.Font = new Font("Segoe UI", 10F);
+            cmbTipoReporte.ForeColor = Color.FromArgb(68, 88, 112);
+            cmbTipoReporte.ItemHeight = 30;
+            cmbTipoReporte.Items.AddRange(new object[] { "Resumen general", "Por cliente", "Por repartidor", "Por fecha" });
+            cmbTipoReporte.Location = new Point(590, 60);
+            cmbTipoReporte.Margin = new Padding(10);
+            cmbTipoReporte.Name = "cmbTipoReporte";
+            cmbTipoReporte.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            cmbTipoReporte.Size = new Size(316, 36);
+            cmbTipoReporte.TabIndex = 5;
             // 
-            // label3
+            // btnGenerar
             // 
-            label3.Anchor = AnchorStyles.None;
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(54, 27);
-            label3.Name = "label3";
-            label3.Size = new Size(78, 15);
-            label3.TabIndex = 1;
-            label3.Text = "Fecha desde:";
+            btnGenerar.Anchor = AnchorStyles.Left;
+            btnGenerar.BorderRadius = 10;
+            btnGenerar.CustomizableEdges = customizableEdges13;
+            btnGenerar.FillColor = Color.FromArgb(37, 99, 235);
+            btnGenerar.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnGenerar.ForeColor = Color.White;
+            btnGenerar.Location = new Point(919, 57);
+            btnGenerar.Name = "btnGenerar";
+            btnGenerar.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            btnGenerar.Size = new Size(150, 36);
+            btnGenerar.TabIndex = 6;
+            btnGenerar.Text = "Generar";
+            btnGenerar.Click += button1_Click;
             // 
-            // button1
+            // lblSubtitulo
             // 
-            button1.Anchor = AnchorStyles.None;
-            button1.BackColor = Color.Tomato;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(623, 49);
-            button1.Name = "button1";
-            button1.Size = new Size(100, 25);
-            button1.TabIndex = 7;
-            button1.Text = "Generar";
-            button1.UseVisualStyleBackColor = false;
+            lblSubtitulo.AutoSize = true;
+            lblSubtitulo.Font = new Font("Segoe UI", 10F);
+            lblSubtitulo.ForeColor = Color.Gray;
+            lblSubtitulo.Location = new Point(22, 65);
+            lblSubtitulo.Name = "lblSubtitulo";
+            lblSubtitulo.Size = new Size(316, 19);
+            lblSubtitulo.TabIndex = 1;
+            lblSubtitulo.Text = "Visualiza métricas y reportes generales del sistema";
             // 
-            // panel1
+            // lblTitulo
             // 
-            panel1.BorderStyle = BorderStyle.FixedSingle;
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(15, 40);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(770, 2);
-            panel1.TabIndex = 1;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Dock = DockStyle.Top;
-            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.FromArgb(44, 62, 80);
-            label1.Location = new Point(15, 15);
-            label1.Name = "label1";
-            label1.Size = new Size(213, 25);
-            label1.TabIndex = 0;
-            label1.Text = "Reportes Y Estadisticas";
+            lblTitulo.AutoSize = true;
+            lblTitulo.Font = new Font("Segoe UI", 22F, FontStyle.Bold);
+            lblTitulo.ForeColor = Color.FromArgb(30, 41, 59);
+            lblTitulo.Location = new Point(20, 20);
+            lblTitulo.Name = "lblTitulo";
+            lblTitulo.Size = new Size(338, 41);
+            lblTitulo.TabIndex = 0;
+            lblTitulo.Text = "Reportes y Estadísticas";
             // 
             // FrmReportes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(236, 240, 241);
-            ClientSize = new Size(800, 525);
+            BackColor = Color.White;
+            ClientSize = new Size(1200, 700);
             Controls.Add(panelContainer);
             FormBorderStyle = FormBorderStyle.None;
+            MinimumSize = new Size(1000, 650);
             Name = "FrmReportes";
-            Text = "Reportes";
+            Text = "FrmReportes";
             panelContainer.ResumeLayout(false);
             panelContainer.PerformLayout();
-            panel3.ResumeLayout(false);
-            tableLayoutPanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            panel4.ResumeLayout(false);
-            panel4.PerformLayout();
-            panel2.ResumeLayout(false);
-            panelFiltros.ResumeLayout(false);
-            tableLayoutPanel1.ResumeLayout(false);
-            tableLayoutPanel1.PerformLayout();
+            pnlGrid.ResumeLayout(false);
+            tableGrid.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvReportes).EndInit();
+            panelResumen.ResumeLayout(false);
+            panelResumen.PerformLayout();
+            pnlGraficos.ResumeLayout(false);
+            pnlFiltros.ResumeLayout(false);
+            tableFiltros.ResumeLayout(false);
+            tableFiltros.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
 
         private Panel panelContainer;
-        private Panel panel1;
-        private Label label1;
-        private Panel panelFiltros;
-        private Label label2;
-        private DateTimePicker dateTimePicker2;
-        private Label label4;
-        private DateTimePicker dateTimePicker1;
-        private Label label3;
-        private Button button1;
-        private ComboBox comboBox1;
-        private Label label5;
-        private TableLayoutPanel tableLayoutPanel1;
-        private Panel panel2;
-        private TableLayoutPanel tableLayoutPanel2;
-        private Panel panel3;
-        private TableLayoutPanel tableLayoutPanel3;
-        private DataGridView dataGridView1;
+
+        private Label lblTitulo;
+        private Label lblSubtitulo;
+
+        private Guna2Panel pnlFiltros;
+        private TableLayoutPanel tableFiltros;
+
+        private Label lblDesde;
+        private Label lblHasta;
+        private Label lblTipo;
+
+        private Guna2DateTimePicker dtDesde;
+        private Guna2DateTimePicker dtHasta;
+
+        private Guna2ComboBox cmbTipoReporte;
+
+        private Guna2Button btnGenerar;
+
+        private Guna2Panel pnlGraficos;
+        private TableLayoutPanel tableGraficos;
+
+        private Guna2Panel pnlGrid;
+        private TableLayoutPanel tableGrid;
+
+        private Guna2DataGridView dgvReportes;
+
+        private Guna2Panel panelResumen;
+
+        private Label lblResumen;
+
+        private Label lblTotalText;
+        private Label lblPendientesText;
+        private Label lblRutaText;
+        private Label lblEntregadosText;
+
+        private Label lblTotal;
+        private Label lblPendientes;
+        private Label lblRuta;
+        private Label lblEntregados;
+
         private DataGridViewTextBoxColumn ID;
         private DataGridViewTextBoxColumn Cliente;
         private DataGridViewTextBoxColumn Fecha;
         private DataGridViewTextBoxColumn Repartidor;
         private DataGridViewTextBoxColumn Estado;
         private DataGridViewTextBoxColumn Ruta;
-        private Panel panel4;
-        private Label label6;
-        private Label label10;
-        private Label label9;
-        private Label label8;
-        private Label label7;
-        private Label label14;
-        private Label label13;
-        private Label label12;
-        private Label label11;
     }
 }
