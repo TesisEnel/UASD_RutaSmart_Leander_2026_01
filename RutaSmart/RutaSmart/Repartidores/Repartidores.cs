@@ -35,7 +35,7 @@ namespace RutaSmart.UI.Repartidores
 
             if (!valido) return;
 
-            dataGridView1.Rows.Add(
+            dgvRepartidores.Rows.Add(
                 txtNombre.Text,
                 txtTelefono.Text,
                 cmbEstado.Text
@@ -46,15 +46,15 @@ namespace RutaSmart.UI.Repartidores
             btnLimpiar.PerformClick();
         }
 
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvRepartidores_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
             {
                 filaSeleccionada = e.RowIndex;
 
-                txtNombre.Text = dataGridView1?.Rows[e.RowIndex].Cells[1].Value?.ToString();
-                txtTelefono.Text = dataGridView1?.Rows[e.RowIndex].Cells[2].Value?.ToString();
-                cmbEstado.Text = dataGridView1?.Rows[e.RowIndex].Cells[3].Value?.ToString();
+                txtNombre.Text = dgvRepartidores?.Rows[e.RowIndex].Cells[1].Value?.ToString();
+                txtTelefono.Text = dgvRepartidores?.Rows[e.RowIndex].Cells[2].Value?.ToString();
+                cmbEstado.Text = dgvRepartidores?.Rows[e.RowIndex].Cells[3].Value?.ToString();
             }
         }
 
@@ -87,9 +87,9 @@ namespace RutaSmart.UI.Repartidores
 
             if (!valido) return;
 
-            dataGridView1.Rows[filaSeleccionada].Cells[1].Value = txtNombre.Text;
-            dataGridView1.Rows[filaSeleccionada].Cells[2].Value = txtTelefono.Text;
-            dataGridView1.Rows[filaSeleccionada].Cells[3].Value = cmbEstado.Text;
+            dgvRepartidores.Rows[filaSeleccionada].Cells[1].Value = txtNombre.Text;
+            dgvRepartidores.Rows[filaSeleccionada].Cells[2].Value = txtTelefono.Text;
+            dgvRepartidores.Rows[filaSeleccionada].Cells[3].Value = cmbEstado.Text;
 
             MessageBox.Show("Repartidor actualizado");
 

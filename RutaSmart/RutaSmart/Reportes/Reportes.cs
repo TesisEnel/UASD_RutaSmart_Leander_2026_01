@@ -25,14 +25,14 @@ namespace RutaSmart.UI.Reportes
 
         private void CrearGraficos()
         {
-            tableLayoutPanel2.Controls.Clear();
+            tableGraficos.Controls.Clear();
 
             Chart barras = CrearGraficoBarras();
             Chart pastel = CrearGraficoPastel();
 
             // Agregar al TableLayoutPanel
-            tableLayoutPanel2.Controls.Add(barras, 0, 0); 
-            tableLayoutPanel2.Controls.Add(pastel, 1, 0); 
+            tableGraficos.Controls.Add(barras, 0, 0); 
+            tableGraficos.Controls.Add(pastel, 1, 0); 
         }
 
         private Chart CrearGraficoBarras()
