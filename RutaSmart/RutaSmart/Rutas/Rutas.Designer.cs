@@ -1,319 +1,374 @@
-﻿namespace RutaSmart.UI.Rutas
+﻿using Guna.UI2.WinForms;
+
+namespace RutaSmart.UI.Rutas
 {
     partial class Rutas
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
             {
                 components.Dispose();
             }
+
             base.Dispose(disposing);
         }
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            panelForm = new Panel();
-            panel1 = new Panel();
-            tableLayoutPanel1 = new TableLayoutPanel();
-            label1 = new Label();
-            panel2 = new Panel();
-            label2 = new Label();
-            textBox1 = new TextBox();
-            label3 = new Label();
-            txtNombre = new TextBox();
-            label4 = new Label();
-            cmbRepartidor = new ComboBox();
-            label5 = new Label();
-            txtZona = new TextBox();
-            btnGuardar = new Button();
-            this.btnLimpiar = new Button();
-            tableLayoutPanel2 = new TableLayoutPanel();
-            panel3 = new Panel();
-            label6 = new Label();
-            this.btnModificar = new Button();
-            btnEliminar = new Button();
-            dataGridView1 = new DataGridView();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            panelPrincipal = new Panel();
+            panelContenedor = new Guna2Panel();
+            lblTitulo = new Label();
+            lblSubtitulo = new Label();
+            pnlFormulario = new Guna2Panel();
+            tableFormulario = new TableLayoutPanel();
+            txtId = new Guna2TextBox();
+            txtNombreRuta = new Guna2TextBox();
+            cmbRepartidor = new Guna2ComboBox();
+            txtZona = new Guna2TextBox();
+            flowBotones = new FlowLayoutPanel();
+            btnGuardar = new Guna2Button();
+            btnLimpiar = new Guna2Button();
+            btnModificar = new Guna2Button();
+            btnEliminar = new Guna2Button();
+            pnlGrid = new Guna2Panel();
+            dgvRutas = new Guna2DataGridView();
             ID = new DataGridViewTextBoxColumn();
-            Nombre = new DataGridViewTextBoxColumn();
+            NombreRuta = new DataGridViewTextBoxColumn();
             Repartidor = new DataGridViewTextBoxColumn();
             Zona = new DataGridViewTextBoxColumn();
-            panelForm.SuspendLayout();
-            panel1.SuspendLayout();
-            tableLayoutPanel1.SuspendLayout();
-            panel2.SuspendLayout();
-            tableLayoutPanel2.SuspendLayout();
-            panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            panelPrincipal.SuspendLayout();
+            panelContenedor.SuspendLayout();
+            pnlFormulario.SuspendLayout();
+            tableFormulario.SuspendLayout();
+            flowBotones.SuspendLayout();
+            pnlGrid.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvRutas).BeginInit();
             SuspendLayout();
             // 
-            // panelForm
+            // panelPrincipal
             // 
-            panelForm.BackColor = Color.WhiteSmoke;
-            panelForm.Controls.Add(tableLayoutPanel1);
-            panelForm.Dock = DockStyle.Top;
-            panelForm.Location = new Point(0, 0);
-            panelForm.Name = "panelForm";
-            panelForm.Size = new Size(800, 180);
-            panelForm.TabIndex = 0;
+            panelPrincipal.BackColor = Color.White;
+            panelPrincipal.Controls.Add(panelContenedor);
+            panelPrincipal.Dock = DockStyle.Fill;
+            panelPrincipal.Location = new Point(0, 0);
+            panelPrincipal.Name = "panelPrincipal";
+            panelPrincipal.Size = new Size(1000, 600);
+            panelPrincipal.TabIndex = 0;
             // 
-            // panel1
+            // panelContenedor
             // 
-            panel1.Controls.Add(tableLayoutPanel2);
-            panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(0, 180);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(800, 270);
-            panel1.TabIndex = 1;
+            panelContenedor.Controls.Add(lblTitulo);
+            panelContenedor.Controls.Add(lblSubtitulo);
+            panelContenedor.Controls.Add(pnlFormulario);
+            panelContenedor.Controls.Add(pnlGrid);
+            panelContenedor.CustomizableEdges = customizableEdges21;
+            panelContenedor.Dock = DockStyle.Fill;
+            panelContenedor.FillColor = Color.White;
+            panelContenedor.Location = new Point(0, 0);
+            panelContenedor.Name = "panelContenedor";
+            panelContenedor.Padding = new Padding(20);
+            panelContenedor.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            panelContenedor.Size = new Size(1000, 600);
+            panelContenedor.TabIndex = 0;
             // 
-            // tableLayoutPanel1
+            // lblTitulo
             // 
-            tableLayoutPanel1.ColumnCount = 1;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.Controls.Add(label1, 0, 0);
-            tableLayoutPanel1.Controls.Add(panel2, 0, 1);
-            tableLayoutPanel1.Dock = DockStyle.Fill;
-            tableLayoutPanel1.Location = new Point(0, 0);
-            tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 2;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 18F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 82F));
-            tableLayoutPanel1.Size = new Size(800, 180);
-            tableLayoutPanel1.TabIndex = 0;
+            lblTitulo.AutoSize = true;
+            lblTitulo.Font = new Font("Segoe UI", 22F, FontStyle.Bold);
+            lblTitulo.ForeColor = Color.FromArgb(30, 41, 59);
+            lblTitulo.Location = new Point(20, 20);
+            lblTitulo.Name = "lblTitulo";
+            lblTitulo.Size = new Size(97, 41);
+            lblTitulo.TabIndex = 0;
+            lblTitulo.Text = "Rutas";
             // 
-            // label1
+            // lblSubtitulo
             // 
-            label1.Anchor = AnchorStyles.Left;
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(3, 5);
-            label1.Name = "label1";
-            label1.Size = new Size(141, 21);
-            label1.TabIndex = 0;
-            label1.Text = "Gestion de  Rutas";
+            lblSubtitulo.AutoSize = true;
+            lblSubtitulo.Font = new Font("Segoe UI", 10F);
+            lblSubtitulo.ForeColor = Color.Gray;
+            lblSubtitulo.Location = new Point(23, 68);
+            lblSubtitulo.Name = "lblSubtitulo";
+            lblSubtitulo.Size = new Size(227, 19);
+            lblSubtitulo.TabIndex = 1;
+            lblSubtitulo.Text = "Administra las rutas de repartidores";
             // 
-            // panel2
+            // pnlFormulario
             // 
-            panel2.Anchor = AnchorStyles.None;
-            panel2.BorderStyle = BorderStyle.FixedSingle;
-            panel2.Controls.Add(this.btnLimpiar);
-            panel2.Controls.Add(txtZona);
-            panel2.Controls.Add(label5);
-            panel2.Controls.Add(btnGuardar);
-            panel2.Controls.Add(cmbRepartidor);
-            panel2.Controls.Add(label4);
-            panel2.Controls.Add(txtNombre);
-            panel2.Controls.Add(label3);
-            panel2.Controls.Add(textBox1);
-            panel2.Controls.Add(label2);
-            panel2.Location = new Point(142, 36);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(515, 140);
-            panel2.TabIndex = 1;
+            pnlFormulario.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pnlFormulario.BackColor = Color.Transparent;
+            pnlFormulario.BorderRadius = 20;
+            pnlFormulario.Controls.Add(tableFormulario);
+            pnlFormulario.CustomizableEdges = customizableEdges17;
+            pnlFormulario.FillColor = Color.White;
+            pnlFormulario.Location = new Point(20, 100);
+            pnlFormulario.Name = "pnlFormulario";
+            pnlFormulario.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            pnlFormulario.ShadowDecoration.Enabled = true;
+            pnlFormulario.Size = new Size(960, 220);
+            pnlFormulario.TabIndex = 2;
             // 
-            // label2
+            // tableFormulario
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(20, 20);
-            label2.Name = "label2";
-            label2.Size = new Size(27, 21);
-            label2.TabIndex = 0;
-            label2.Text = "ID";
+            tableFormulario.ColumnCount = 2;
+            tableFormulario.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableFormulario.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableFormulario.Controls.Add(txtId, 0, 0);
+            tableFormulario.Controls.Add(txtNombreRuta, 1, 0);
+            tableFormulario.Controls.Add(cmbRepartidor, 0, 1);
+            tableFormulario.Controls.Add(txtZona, 1, 1);
+            tableFormulario.Controls.Add(flowBotones, 0, 2);
+            tableFormulario.Dock = DockStyle.Fill;
+            tableFormulario.Location = new Point(0, 0);
+            tableFormulario.Name = "tableFormulario";
+            tableFormulario.Padding = new Padding(20);
+            tableFormulario.RowCount = 3;
+            tableFormulario.RowStyles.Add(new RowStyle(SizeType.Absolute, 65F));
+            tableFormulario.RowStyles.Add(new RowStyle(SizeType.Absolute, 65F));
+            tableFormulario.RowStyles.Add(new RowStyle(SizeType.Absolute, 60F));
+            tableFormulario.Size = new Size(960, 220);
+            tableFormulario.TabIndex = 0;
             // 
-            // textBox1
+            // txtId
             // 
-            textBox1.Location = new Point(53, 22);
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 1;
+            txtId.BorderRadius = 10;
+            txtId.CustomizableEdges = customizableEdges1;
+            txtId.DefaultText = "";
+            txtId.Dock = DockStyle.Fill;
+            txtId.Font = new Font("Segoe UI", 9F);
+            txtId.Location = new Point(30, 30);
+            txtId.Margin = new Padding(10);
+            txtId.Name = "txtId";
+            txtId.PlaceholderText = "ID";
+            txtId.ReadOnly = true;
+            txtId.SelectedText = "";
+            txtId.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            txtId.Size = new Size(440, 45);
+            txtId.TabIndex = 0;
             // 
-            // label3
+            // txtNombreRuta
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(174, 24);
-            label3.Name = "label3";
-            label3.Size = new Size(112, 21);
-            label3.TabIndex = 2;
-            label3.Text = "Nombre Ruta";
-            // 
-            // txtNombre
-            // 
-            txtNombre.Location = new Point(306, 26);
-            txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(185, 23);
-            txtNombre.TabIndex = 3;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(20, 67);
-            label4.Name = "label4";
-            label4.Size = new Size(91, 21);
-            label4.TabIndex = 4;
-            label4.Text = "Repartidor";
+            txtNombreRuta.BorderRadius = 10;
+            txtNombreRuta.CustomizableEdges = customizableEdges3;
+            txtNombreRuta.DefaultText = "";
+            txtNombreRuta.Dock = DockStyle.Fill;
+            txtNombreRuta.Font = new Font("Segoe UI", 9F);
+            txtNombreRuta.Location = new Point(490, 30);
+            txtNombreRuta.Margin = new Padding(10);
+            txtNombreRuta.Name = "txtNombreRuta";
+            txtNombreRuta.PlaceholderText = "Nombre de la ruta";
+            txtNombreRuta.SelectedText = "";
+            txtNombreRuta.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            txtNombreRuta.Size = new Size(440, 45);
+            txtNombreRuta.TabIndex = 1;
             // 
             // cmbRepartidor
             // 
+            cmbRepartidor.BackColor = Color.Transparent;
+            cmbRepartidor.BorderRadius = 10;
+            cmbRepartidor.CustomizableEdges = customizableEdges5;
+            cmbRepartidor.Dock = DockStyle.Fill;
+            cmbRepartidor.DrawMode = DrawMode.OwnerDrawFixed;
             cmbRepartidor.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbRepartidor.FormattingEnabled = true;
-            cmbRepartidor.Location = new Point(117, 67);
+            cmbRepartidor.FocusedColor = Color.FromArgb(94, 148, 255);
+            cmbRepartidor.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            cmbRepartidor.Font = new Font("Segoe UI", 10F);
+            cmbRepartidor.ForeColor = Color.FromArgb(68, 88, 112);
+            cmbRepartidor.ItemHeight = 30;
+            cmbRepartidor.Location = new Point(30, 95);
+            cmbRepartidor.Margin = new Padding(10);
             cmbRepartidor.Name = "cmbRepartidor";
-            cmbRepartidor.Size = new Size(121, 23);
-            cmbRepartidor.TabIndex = 5;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(259, 69);
-            label5.Name = "label5";
-            label5.Size = new Size(49, 21);
-            label5.TabIndex = 6;
-            label5.Text = "Zona";
+            cmbRepartidor.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            cmbRepartidor.Size = new Size(440, 36);
+            cmbRepartidor.TabIndex = 2;
             // 
             // txtZona
             // 
-            txtZona.Location = new Point(327, 69);
+            txtZona.BorderRadius = 10;
+            txtZona.CustomizableEdges = customizableEdges7;
+            txtZona.DefaultText = "";
+            txtZona.Dock = DockStyle.Fill;
+            txtZona.Font = new Font("Segoe UI", 9F);
+            txtZona.Location = new Point(490, 95);
+            txtZona.Margin = new Padding(10);
             txtZona.Name = "txtZona";
-            txtZona.Size = new Size(164, 23);
-            txtZona.TabIndex = 7;
+            txtZona.PlaceholderText = "Zona o área";
+            txtZona.SelectedText = "";
+            txtZona.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            txtZona.Size = new Size(440, 45);
+            txtZona.TabIndex = 3;
+            // 
+            // flowBotones
+            // 
+            tableFormulario.SetColumnSpan(flowBotones, 2);
+            flowBotones.Controls.Add(btnGuardar);
+            flowBotones.Controls.Add(btnLimpiar);
+            flowBotones.Controls.Add(btnModificar);
+            flowBotones.Controls.Add(btnEliminar);
+            flowBotones.Dock = DockStyle.Fill;
+            flowBotones.Location = new Point(30, 160);
+            flowBotones.Margin = new Padding(10);
+            flowBotones.Name = "flowBotones";
+            flowBotones.Padding = new Padding(5);
+            flowBotones.Size = new Size(900, 40);
+            flowBotones.TabIndex = 4;
             // 
             // btnGuardar
             // 
-            btnGuardar.Anchor = AnchorStyles.Left;
-            btnGuardar.AutoSize = true;
-            btnGuardar.BackColor = Color.SteelBlue;
-            btnGuardar.FlatAppearance.BorderSize = 0;
-            btnGuardar.FlatStyle = FlatStyle.Flat;
-            btnGuardar.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnGuardar.BorderRadius = 10;
+            btnGuardar.CustomizableEdges = customizableEdges9;
+            btnGuardar.FillColor = Color.FromArgb(37, 99, 235);
+            btnGuardar.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnGuardar.ForeColor = Color.White;
-            btnGuardar.Location = new Point(20, 109);
-            btnGuardar.Margin = new Padding(145, 3, 3, 3);
+            btnGuardar.Location = new Point(8, 8);
             btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new Size(100, 26);
-            btnGuardar.TabIndex = 2;
+            btnGuardar.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            btnGuardar.Size = new Size(120, 40);
+            btnGuardar.TabIndex = 0;
             btnGuardar.Text = "Guardar";
-            btnGuardar.UseVisualStyleBackColor = false;
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.AutoSize = true;
-            this.btnLimpiar.BackColor = Color.DarkGray;
-            this.btnLimpiar.FlatAppearance.BorderSize = 0;
-            this.btnLimpiar.FlatStyle = FlatStyle.Flat;
-            this.btnLimpiar.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            this.btnLimpiar.ForeColor = Color.White;
-            this.btnLimpiar.Location = new Point(138, 109);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new Size(100, 26);
-            this.btnLimpiar.TabIndex = 8;
-            this.btnLimpiar.Text = "Limpiar";
-            this.btnLimpiar.UseVisualStyleBackColor = false;
-            // 
-            // tableLayoutPanel2
-            // 
-            tableLayoutPanel2.ColumnCount = 1;
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanel2.Controls.Add(panel3, 0, 0);
-            tableLayoutPanel2.Controls.Add(dataGridView1, 0, 1);
-            tableLayoutPanel2.Dock = DockStyle.Fill;
-            tableLayoutPanel2.Location = new Point(0, 0);
-            tableLayoutPanel2.Name = "tableLayoutPanel2";
-            tableLayoutPanel2.RowCount = 2;
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 80F));
-            tableLayoutPanel2.Size = new Size(800, 270);
-            tableLayoutPanel2.TabIndex = 0;
-            // 
-            // panel3
-            // 
-            panel3.Controls.Add(btnEliminar);
-            panel3.Controls.Add(this.btnModificar);
-            panel3.Controls.Add(label6);
-            panel3.Dock = DockStyle.Fill;
-            panel3.Location = new Point(3, 3);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(794, 48);
-            panel3.TabIndex = 0;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(35, 14);
-            label6.Name = "label6";
-            label6.Size = new Size(134, 21);
-            label6.TabIndex = 0;
-            label6.Text = "Listado de Rutas";
+            btnLimpiar.BorderRadius = 10;
+            btnLimpiar.CustomizableEdges = customizableEdges11;
+            btnLimpiar.FillColor = Color.Gray;
+            btnLimpiar.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnLimpiar.ForeColor = Color.White;
+            btnLimpiar.Location = new Point(134, 8);
+            btnLimpiar.Name = "btnLimpiar";
+            btnLimpiar.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            btnLimpiar.Size = new Size(120, 40);
+            btnLimpiar.TabIndex = 1;
+            btnLimpiar.Text = "Limpiar";
             // 
             // btnModificar
             // 
-            this.btnModificar.AutoSize = true;
-            this.btnModificar.BackColor = Color.OrangeRed;
-            this.btnModificar.FlatStyle = FlatStyle.Flat;
-            this.btnModificar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            this.btnModificar.ForeColor = Color.White;
-            this.btnModificar.Location = new Point(531, 10);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new Size(100, 30);
-            this.btnModificar.TabIndex = 1;
-            this.btnModificar.Text = "Modificar";
-            this.btnModificar.UseVisualStyleBackColor = false;
+            btnModificar.BorderRadius = 10;
+            btnModificar.CustomizableEdges = customizableEdges13;
+            btnModificar.FillColor = Color.OrangeRed;
+            btnModificar.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnModificar.ForeColor = Color.White;
+            btnModificar.Location = new Point(260, 8);
+            btnModificar.Name = "btnModificar";
+            btnModificar.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            btnModificar.Size = new Size(120, 40);
+            btnModificar.TabIndex = 2;
+            btnModificar.Text = "Modificar";
             // 
             // btnEliminar
             // 
-            btnEliminar.AutoSize = true;
-            btnEliminar.BackColor = Color.Fuchsia;
-            btnEliminar.FlatAppearance.BorderSize = 0;
-            btnEliminar.FlatStyle = FlatStyle.Flat;
-            btnEliminar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnEliminar.BorderRadius = 10;
+            btnEliminar.CustomizableEdges = customizableEdges15;
+            btnEliminar.FillColor = Color.MediumVioletRed;
+            btnEliminar.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnEliminar.ForeColor = Color.White;
-            btnEliminar.Location = new Point(661, 10);
+            btnEliminar.Location = new Point(386, 8);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(100, 30);
-            btnEliminar.TabIndex = 2;
+            btnEliminar.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            btnEliminar.Size = new Size(120, 40);
+            btnEliminar.TabIndex = 3;
             btnEliminar.Text = "Eliminar";
-            btnEliminar.UseVisualStyleBackColor = false;
             // 
-            // dataGridView1
+            // pnlGrid
             // 
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { ID, Nombre, Repartidor, Zona });
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(3, 57);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(794, 210);
-            dataGridView1.TabIndex = 1;
+            pnlGrid.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pnlGrid.Controls.Add(dgvRutas);
+            pnlGrid.CustomizableEdges = customizableEdges19;
+            pnlGrid.Location = new Point(20, 340);
+            pnlGrid.Name = "pnlGrid";
+            pnlGrid.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            pnlGrid.Size = new Size(960, 240);
+            pnlGrid.TabIndex = 3;
+            // 
+            // dgvRutas
+            // 
+            dataGridViewCellStyle1.BackColor = Color.White;
+            dgvRutas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(15, 23, 42);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dgvRutas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dgvRutas.ColumnHeadersHeight = 40;
+            dgvRutas.Columns.AddRange(new DataGridViewColumn[] { ID, NombreRuta, Repartidor, Zona });
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.White;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.ForeColor = Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            dataGridViewCellStyle3.SelectionForeColor = Color.Black;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            dgvRutas.DefaultCellStyle = dataGridViewCellStyle3;
+            dgvRutas.Dock = DockStyle.Fill;
+            dgvRutas.GridColor = Color.FromArgb(231, 229, 255);
+            dgvRutas.Location = new Point(0, 0);
+            dgvRutas.Name = "dgvRutas";
+            dgvRutas.RowHeadersVisible = false;
+            dgvRutas.RowTemplate.Height = 35;
+            dgvRutas.Size = new Size(960, 240);
+            dgvRutas.TabIndex = 0;
+            dgvRutas.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
+            dgvRutas.ThemeStyle.AlternatingRowsStyle.Font = null;
+            dgvRutas.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
+            dgvRutas.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
+            dgvRutas.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
+            dgvRutas.ThemeStyle.BackColor = Color.White;
+            dgvRutas.ThemeStyle.GridColor = Color.FromArgb(231, 229, 255);
+            dgvRutas.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
+            dgvRutas.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
+            dgvRutas.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F);
+            dgvRutas.ThemeStyle.HeaderStyle.ForeColor = Color.White;
+            dgvRutas.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dgvRutas.ThemeStyle.HeaderStyle.Height = 40;
+            dgvRutas.ThemeStyle.ReadOnly = false;
+            dgvRutas.ThemeStyle.RowsStyle.BackColor = Color.White;
+            dgvRutas.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgvRutas.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F);
+            dgvRutas.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(71, 69, 94);
+            dgvRutas.ThemeStyle.RowsStyle.Height = 35;
+            dgvRutas.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            dgvRutas.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
             // 
             // ID
             // 
             ID.HeaderText = "ID";
             ID.Name = "ID";
             // 
-            // Nombre
+            // NombreRuta
             // 
-            Nombre.HeaderText = "Nombre Ruta";
-            Nombre.Name = "Nombre";
+            NombreRuta.HeaderText = "Nombre Ruta";
+            NombreRuta.Name = "NombreRuta";
             // 
             // Repartidor
             // 
@@ -322,57 +377,59 @@
             // 
             // Zona
             // 
-            Zona.HeaderText = "Zona / Area";
+            Zona.HeaderText = "Zona / Área";
             Zona.Name = "Zona";
             // 
             // Rutas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
-            ClientSize = new Size(800, 450);
-            Controls.Add(panel1);
-            Controls.Add(panelForm);
+            ClientSize = new Size(1000, 600);
+            Controls.Add(panelPrincipal);
+            FormBorderStyle = FormBorderStyle.None;
+            MinimumSize = new Size(850, 550);
             Name = "Rutas";
             Text = "Rutas";
-            panelForm.ResumeLayout(false);
-            panel1.ResumeLayout(false);
-            tableLayoutPanel1.ResumeLayout(false);
-            tableLayoutPanel1.PerformLayout();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            tableLayoutPanel2.ResumeLayout(false);
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            panelPrincipal.ResumeLayout(false);
+            panelContenedor.ResumeLayout(false);
+            panelContenedor.PerformLayout();
+            pnlFormulario.ResumeLayout(false);
+            tableFormulario.ResumeLayout(false);
+            flowBotones.ResumeLayout(false);
+            pnlGrid.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvRutas).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Panel panelForm;
-        private Panel panel1;
-        private TableLayoutPanel tableLayoutPanel1;
-        private Label label1;
-        private Panel panel2;
-        private TextBox textBox1;
-        private Label label2;
-        private ComboBox cmbRepartidor;
-        private Label label4;
-        private TextBox txtNombre;
-        private Label label3;
-        private TextBox txtZona;
-        private Label label5;
-        private Button btnGuardar;
-        private Button btnLimpiar;
-        private TableLayoutPanel tableLayoutPanel2;
-        private Panel panel3;
-        private Button btnModificar;
-        private Label label6;
-        private Button btnEliminar;
-        private DataGridView dataGridView1;
+        private Panel panelPrincipal;
+
+        private Guna2Panel panelContenedor;
+
+        private Label lblTitulo;
+        private Label lblSubtitulo;
+
+        private Guna2Panel pnlFormulario;
+        private TableLayoutPanel tableFormulario;
+
+        private Guna2TextBox txtId;
+        private Guna2TextBox txtNombreRuta;
+        private Guna2ComboBox cmbRepartidor;
+        private Guna2TextBox txtZona;
+
+        private FlowLayoutPanel flowBotones;
+
+        private Guna2Button btnGuardar;
+        private Guna2Button btnLimpiar;
+        private Guna2Button btnModificar;
+        private Guna2Button btnEliminar;
+
+        private Guna2Panel pnlGrid;
+        private Guna2DataGridView dgvRutas;
+
         private DataGridViewTextBoxColumn ID;
-        private DataGridViewTextBoxColumn Nombre;
+        private DataGridViewTextBoxColumn NombreRuta;
         private DataGridViewTextBoxColumn Repartidor;
         private DataGridViewTextBoxColumn Zona;
     }
