@@ -7,9 +7,9 @@ namespace RutaSmart
             InitializeComponent();
         }
 
-        private void button4_Click_1(object sender, EventArgs e)
+        private void label7_Click(object sender, EventArgs e)
         {
-            this.Close();
+
         }
     }
 }
