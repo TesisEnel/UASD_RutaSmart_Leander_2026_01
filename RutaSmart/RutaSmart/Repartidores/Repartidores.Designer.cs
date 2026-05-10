@@ -19,10 +19,10 @@ namespace RutaSmart.UI.Repartidores
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -37,11 +37,13 @@ namespace RutaSmart.UI.Repartidores
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panelContainer = new Panel();
             guna2Panel1 = new Guna2Panel();
             lblTitulo = new Label();
@@ -64,6 +66,7 @@ namespace RutaSmart.UI.Repartidores
             Estado = new DataGridViewTextBoxColumn();
             Accion = new DataGridViewTextBoxColumn();
             errorProvider1 = new ErrorProvider(components);
+            guna2Button1 = new Guna2Button();
             panelContainer.SuspendLayout();
             guna2Panel1.SuspendLayout();
             pnlFormulario.SuspendLayout();
@@ -90,13 +93,13 @@ namespace RutaSmart.UI.Repartidores
             guna2Panel1.Controls.Add(lblSubtitulo);
             guna2Panel1.Controls.Add(pnlFormulario);
             guna2Panel1.Controls.Add(pnlGrid);
-            guna2Panel1.CustomizableEdges = customizableEdges19;
+            guna2Panel1.CustomizableEdges = customizableEdges21;
             guna2Panel1.Dock = DockStyle.Fill;
             guna2Panel1.FillColor = Color.Transparent;
             guna2Panel1.Location = new Point(0, 0);
             guna2Panel1.Name = "guna2Panel1";
             guna2Panel1.Padding = new Padding(20);
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges22;
             guna2Panel1.Size = new Size(900, 550);
             guna2Panel1.TabIndex = 0;
             // 
@@ -128,11 +131,11 @@ namespace RutaSmart.UI.Repartidores
             pnlFormulario.BackColor = Color.Transparent;
             pnlFormulario.BorderRadius = 20;
             pnlFormulario.Controls.Add(tableFormulario);
-            pnlFormulario.CustomizableEdges = customizableEdges15;
+            pnlFormulario.CustomizableEdges = customizableEdges17;
             pnlFormulario.FillColor = Color.White;
             pnlFormulario.Location = new Point(20, 100);
             pnlFormulario.Name = "pnlFormulario";
-            pnlFormulario.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            pnlFormulario.ShadowDecoration.CustomizableEdges = customizableEdges18;
             pnlFormulario.ShadowDecoration.Enabled = true;
             pnlFormulario.Size = new Size(840, 200);
             pnlFormulario.TabIndex = 2;
@@ -152,9 +155,9 @@ namespace RutaSmart.UI.Repartidores
             tableFormulario.Name = "tableFormulario";
             tableFormulario.Padding = new Padding(20);
             tableFormulario.RowCount = 3;
-            tableFormulario.RowStyles.Add(new RowStyle(SizeType.Absolute, 60F));
-            tableFormulario.RowStyles.Add(new RowStyle(SizeType.Absolute, 60F));
-            tableFormulario.RowStyles.Add(new RowStyle(SizeType.Absolute, 60F));
+            tableFormulario.RowStyles.Add(new RowStyle(SizeType.Percent, 27F));
+            tableFormulario.RowStyles.Add(new RowStyle(SizeType.Percent, 30F));
+            tableFormulario.RowStyles.Add(new RowStyle(SizeType.Percent, 43F));
             tableFormulario.Size = new Size(840, 200);
             tableFormulario.TabIndex = 0;
             // 
@@ -172,7 +175,7 @@ namespace RutaSmart.UI.Repartidores
             txtId.ReadOnly = true;
             txtId.SelectedText = "";
             txtId.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            txtId.Size = new Size(380, 40);
+            txtId.Size = new Size(380, 23);
             txtId.TabIndex = 0;
             // 
             // txtNombre
@@ -188,7 +191,7 @@ namespace RutaSmart.UI.Repartidores
             txtNombre.PlaceholderText = "Nombre del repartidor";
             txtNombre.SelectedText = "";
             txtNombre.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            txtNombre.Size = new Size(380, 40);
+            txtNombre.Size = new Size(380, 23);
             txtNombre.TabIndex = 1;
             // 
             // txtTelefono
@@ -198,13 +201,13 @@ namespace RutaSmart.UI.Repartidores
             txtTelefono.DefaultText = "";
             txtTelefono.Dock = DockStyle.Fill;
             txtTelefono.Font = new Font("Segoe UI", 9F);
-            txtTelefono.Location = new Point(30, 90);
+            txtTelefono.Location = new Point(30, 73);
             txtTelefono.Margin = new Padding(10);
             txtTelefono.Name = "txtTelefono";
             txtTelefono.PlaceholderText = "Telefono";
             txtTelefono.SelectedText = "";
             txtTelefono.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            txtTelefono.Size = new Size(380, 40);
+            txtTelefono.Size = new Size(380, 28);
             txtTelefono.TabIndex = 2;
             // 
             // cmbEstado
@@ -221,7 +224,7 @@ namespace RutaSmart.UI.Repartidores
             cmbEstado.FormattingEnabled = true;
             cmbEstado.ItemHeight = 30;
             cmbEstado.Items.AddRange(new object[] { "Disponible", "En Ruta", "Inactivo" });
-            cmbEstado.Location = new Point(430, 90);
+            cmbEstado.Location = new Point(430, 73);
             cmbEstado.Margin = new Padding(10);
             cmbEstado.Name = "cmbEstado";
             cmbEstado.ShadowDecoration.CustomizableEdges = customizableEdges8;
@@ -234,12 +237,13 @@ namespace RutaSmart.UI.Repartidores
             flowBotones.Controls.Add(btnGuardar);
             flowBotones.Controls.Add(btnActualizar);
             flowBotones.Controls.Add(btnLimpiar);
+            flowBotones.Controls.Add(guna2Button1);
             flowBotones.Dock = DockStyle.Fill;
-            flowBotones.Location = new Point(30, 150);
+            flowBotones.Location = new Point(30, 121);
             flowBotones.Margin = new Padding(10);
             flowBotones.Name = "flowBotones";
             flowBotones.Padding = new Padding(10, 5, 0, 0);
-            flowBotones.Size = new Size(780, 40);
+            flowBotones.Size = new Size(780, 49);
             flowBotones.TabIndex = 4;
             // 
             // btnGuardar
@@ -269,7 +273,7 @@ namespace RutaSmart.UI.Repartidores
             btnActualizar.ShadowDecoration.CustomizableEdges = customizableEdges12;
             btnActualizar.Size = new Size(120, 40);
             btnActualizar.TabIndex = 1;
-            btnActualizar.Text = "Actualizar";
+            btnActualizar.Text = "Modificar";
             btnActualizar.Click += btnActualizar_Click;
             // 
             // btnLimpiar
@@ -290,10 +294,10 @@ namespace RutaSmart.UI.Repartidores
             // 
             pnlGrid.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pnlGrid.Controls.Add(dgvRepartidores);
-            pnlGrid.CustomizableEdges = customizableEdges17;
+            pnlGrid.CustomizableEdges = customizableEdges19;
             pnlGrid.Location = new Point(20, 320);
             pnlGrid.Name = "pnlGrid";
-            pnlGrid.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            pnlGrid.ShadowDecoration.CustomizableEdges = customizableEdges20;
             pnlGrid.Size = new Size(840, 200);
             pnlGrid.TabIndex = 3;
             // 
@@ -374,6 +378,20 @@ namespace RutaSmart.UI.Repartidores
             // 
             errorProvider1.ContainerControl = this;
             // 
+            // guna2Button1
+            // 
+            guna2Button1.BorderRadius = 10;
+            guna2Button1.CustomizableEdges = customizableEdges15;
+            guna2Button1.FillColor = Color.OliveDrab;
+            guna2Button1.Font = new Font("Segoe UI", 9F);
+            guna2Button1.ForeColor = Color.White;
+            guna2Button1.Location = new Point(391, 8);
+            guna2Button1.Name = "guna2Button1";
+            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            guna2Button1.Size = new Size(120, 40);
+            guna2Button1.TabIndex = 3;
+            guna2Button1.Text = "Eliminar";
+            // 
             // Repartidores
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -432,5 +450,6 @@ namespace RutaSmart.UI.Repartidores
         private DataGridViewTextBoxColumn Telefono;
         private DataGridViewTextBoxColumn Estado;
         private DataGridViewTextBoxColumn Accion;
+        private Guna2Button guna2Button1;
     }
 }
