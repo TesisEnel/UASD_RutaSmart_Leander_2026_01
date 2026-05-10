@@ -153,9 +153,9 @@ namespace RutaSmart.UI.Rutas
             tableFormulario.Name = "tableFormulario";
             tableFormulario.Padding = new Padding(20);
             tableFormulario.RowCount = 3;
-            tableFormulario.RowStyles.Add(new RowStyle(SizeType.Absolute, 65F));
-            tableFormulario.RowStyles.Add(new RowStyle(SizeType.Absolute, 65F));
-            tableFormulario.RowStyles.Add(new RowStyle(SizeType.Absolute, 60F));
+            tableFormulario.RowStyles.Add(new RowStyle(SizeType.Percent, 30F));
+            tableFormulario.RowStyles.Add(new RowStyle(SizeType.Percent, 30F));
+            tableFormulario.RowStyles.Add(new RowStyle(SizeType.Percent, 40F));
             tableFormulario.Size = new Size(960, 220);
             tableFormulario.TabIndex = 0;
             // 
@@ -173,7 +173,7 @@ namespace RutaSmart.UI.Rutas
             txtId.ReadOnly = true;
             txtId.SelectedText = "";
             txtId.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            txtId.Size = new Size(440, 45);
+            txtId.Size = new Size(440, 34);
             txtId.TabIndex = 0;
             // 
             // txtNombreRuta
@@ -189,7 +189,7 @@ namespace RutaSmart.UI.Rutas
             txtNombreRuta.PlaceholderText = "Nombre de la ruta";
             txtNombreRuta.SelectedText = "";
             txtNombreRuta.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            txtNombreRuta.Size = new Size(440, 45);
+            txtNombreRuta.Size = new Size(440, 34);
             txtNombreRuta.TabIndex = 1;
             // 
             // cmbRepartidor
@@ -205,7 +205,7 @@ namespace RutaSmart.UI.Rutas
             cmbRepartidor.Font = new Font("Segoe UI", 10F);
             cmbRepartidor.ForeColor = Color.FromArgb(68, 88, 112);
             cmbRepartidor.ItemHeight = 30;
-            cmbRepartidor.Location = new Point(30, 95);
+            cmbRepartidor.Location = new Point(30, 84);
             cmbRepartidor.Margin = new Padding(10);
             cmbRepartidor.Name = "cmbRepartidor";
             cmbRepartidor.ShadowDecoration.CustomizableEdges = customizableEdges6;
@@ -219,13 +219,13 @@ namespace RutaSmart.UI.Rutas
             txtZona.DefaultText = "";
             txtZona.Dock = DockStyle.Fill;
             txtZona.Font = new Font("Segoe UI", 9F);
-            txtZona.Location = new Point(490, 95);
+            txtZona.Location = new Point(490, 84);
             txtZona.Margin = new Padding(10);
             txtZona.Name = "txtZona";
             txtZona.PlaceholderText = "Zona o área";
             txtZona.SelectedText = "";
             txtZona.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            txtZona.Size = new Size(440, 45);
+            txtZona.Size = new Size(440, 34);
             txtZona.TabIndex = 3;
             // 
             // flowBotones
@@ -236,11 +236,11 @@ namespace RutaSmart.UI.Rutas
             flowBotones.Controls.Add(btnModificar);
             flowBotones.Controls.Add(btnEliminar);
             flowBotones.Dock = DockStyle.Fill;
-            flowBotones.Location = new Point(30, 160);
+            flowBotones.Location = new Point(30, 138);
             flowBotones.Margin = new Padding(10);
             flowBotones.Name = "flowBotones";
             flowBotones.Padding = new Padding(5);
-            flowBotones.Size = new Size(900, 40);
+            flowBotones.Size = new Size(900, 52);
             flowBotones.TabIndex = 4;
             // 
             // btnGuardar
@@ -289,7 +289,7 @@ namespace RutaSmart.UI.Rutas
             // 
             btnEliminar.BorderRadius = 10;
             btnEliminar.CustomizableEdges = customizableEdges15;
-            btnEliminar.FillColor = Color.MediumVioletRed;
+            btnEliminar.FillColor = Color.OliveDrab;
             btnEliminar.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnEliminar.ForeColor = Color.White;
             btnEliminar.Location = new Point(386, 8);
