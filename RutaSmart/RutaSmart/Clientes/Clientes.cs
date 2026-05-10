@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RutaSmart.UI.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +13,8 @@ namespace RutaSmart.UI.Clientes
     public partial class Clientes : Form
     {
         private int filaSeleccionada = -1;
-        public Clientes()
+    
+        public Clientes(ClienteService clienteService)
         {
             InitializeComponent();
         }
