@@ -224,6 +224,7 @@
             btnInicio.TabIndex = 0;
             btnInicio.Text = "Inicio";
             btnInicio.TextAlign = HorizontalAlignment.Left;
+            btnInicio.Click += btnInicio_Click;
             // 
             // btnClientes
             // 
@@ -250,6 +251,7 @@
             btnClientes.TabIndex = 1;
             btnClientes.Text = "Clientes";
             btnClientes.TextAlign = HorizontalAlignment.Left;
+            btnClientes.Click += btnClientes_Click;
             // 
             // btnPedidos
             // 
@@ -276,6 +278,7 @@
             btnPedidos.TabIndex = 2;
             btnPedidos.Text = "Pedidos";
             btnPedidos.TextAlign = HorizontalAlignment.Left;
+            btnPedidos.Click += btnPedidos_Click;
             // 
             // btnRepartidores
             // 
@@ -302,6 +305,7 @@
             btnRepartidores.TabIndex = 3;
             btnRepartidores.Text = "Repartidores";
             btnRepartidores.TextAlign = HorizontalAlignment.Left;
+            btnRepartidores.Click += btnRepartidores_Click;
             // 
             // btnRutas
             // 
@@ -328,6 +332,7 @@
             btnRutas.TabIndex = 4;
             btnRutas.Text = "Rutas";
             btnRutas.TextAlign = HorizontalAlignment.Left;
+            btnRutas.Click += btnRutas_Click;
             // 
             // btnReportes
             // 
@@ -354,6 +359,7 @@
             btnReportes.TabIndex = 5;
             btnReportes.Text = "Reportes";
             btnReportes.TextAlign = HorizontalAlignment.Left;
+            btnReportes.Click += btnReportes_Click;
             // 
             // btnTracking
             // 
@@ -511,6 +517,7 @@
             guna2Button6.Size = new Size(110, 50);
             guna2Button6.TabIndex = 5;
             guna2Button6.Text = "Reportes";
+            guna2Button6.Click += guna2Button6_Click;
             // 
             // guna2Button5
             // 
@@ -533,6 +540,7 @@
             guna2Button5.Size = new Size(110, 50);
             guna2Button5.TabIndex = 4;
             guna2Button5.Text = "Rutas";
+            guna2Button5.Click += guna2Button5_Click;
             // 
             // guna2Button4
             // 
@@ -555,6 +563,7 @@
             guna2Button4.Size = new Size(110, 50);
             guna2Button4.TabIndex = 3;
             guna2Button4.Text = "Repartidores";
+            guna2Button4.Click += guna2Button4_Click;
             // 
             // guna2Button3
             // 
@@ -577,6 +586,7 @@
             guna2Button3.Size = new Size(110, 50);
             guna2Button3.TabIndex = 2;
             guna2Button3.Text = "Pedidos";
+            guna2Button3.Click += guna2Button3_Click;
             // 
             // guna2Button2
             // 
@@ -599,6 +609,7 @@
             guna2Button2.Size = new Size(110, 50);
             guna2Button2.TabIndex = 1;
             guna2Button2.Text = "Clientes";
+            guna2Button2.Click += guna2Button2_Click;
             // 
             // guna2Button1
             // 
@@ -1071,6 +1082,7 @@
             Controls.Add(guna2Panel3);
             Controls.Add(guna2Panel2);
             Controls.Add(guna2Panel1);
+            IsMdiContainer = true;
             Name = "MainForm";
             Text = "RutaSmart";
             WindowState = FormWindowState.Maximized;
@@ -1133,7 +1145,6 @@
         private Label label5;
         private Label label4;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel8;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
         private TableLayoutPanel tableLayoutPanel3;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel10;
@@ -1157,5 +1168,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
     }
 }
