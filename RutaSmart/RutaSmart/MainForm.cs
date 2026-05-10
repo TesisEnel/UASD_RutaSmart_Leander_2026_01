@@ -89,9 +89,9 @@ namespace RutaSmart
             var form = Program.ServiceProvider.GetRequiredService<Rutas>();
             AbrirFormEnPanel(form);
         }
-        private void guna2Button6_Click(object sender, EventArgs e)
+        private void guna2Button6_Click(object sender, EventArgs e) 
         {
-            var form = Program.ServiceProvider.GetRequiredService<Repartidores>();
+            var form = Program.ServiceProvider.GetRequiredService<FrmReportes>();
             AbrirFormEnPanel(form);
         }
         private void AbrirFormEnPanel(Form form)
