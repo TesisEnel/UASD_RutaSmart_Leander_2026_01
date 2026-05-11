@@ -12,7 +12,6 @@ namespace RutaSmart.UI.Clientes
 
     public partial class Clientes : Form
     {
-        private int filaSeleccionada = -1;
     
         public Clientes(ClienteService clienteService)
         {

@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using RutaSmart.Data.Data;
 using RutaSmart.UI.Clientes;
+using RutaSmart.UI.Dashboard;
 using RutaSmart.UI.Pedidos;
 using RutaSmart.UI.Repartidores;
 using RutaSmart.UI.Reportes;
@@ -46,6 +47,7 @@ namespace RutaSmart
             services.AddTransient<Pedidos>();
             services.AddTransient<Repartidores>();
             services.AddTransient<FrmReportes>();
+            services.AddTransient<Dashboard>();
 
             // Services
             services.AddTransient<ClienteService>();

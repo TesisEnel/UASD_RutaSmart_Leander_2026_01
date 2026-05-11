@@ -6,6 +6,7 @@ using RutaSmart.UI.Pedidos;
 using RutaSmart.UI.Repartidores;
 using RutaSmart.UI.Rutas;
 using RutaSmart.UI.Reportes;
+using RutaSmart.UI.Dashboard;
 
 namespace RutaSmart
 {
@@ -15,6 +16,7 @@ namespace RutaSmart
         private readonly PedidosService? _pedidosService;
         private readonly RepartidoresService? _repartidoresService;
         private readonly RutaService? _rutaService;
+        private Form? formularioActivo;
         public MainForm(ClienteService clienteService, PedidosService pedidosService,
         RepartidoresService repartidoresService, RutaService rutaService)
         {
@@ -23,92 +25,78 @@ namespace RutaSmart
             _pedidosService = pedidosService;
             _repartidoresService = repartidoresService;
             _rutaService = rutaService;
-        }
 
-        private void label7_Click(object sender, EventArgs e)
-        {
-
+            AbrirFormulario<Dashboard>();
         }
 
         private void btnInicio_Click(object sender, EventArgs e)
         {
-            foreach (Control c in guna2Panel3.Controls)
-            {
-                if (c is Form f) f.Close();
-            }
-
-            guna2Panel3.Controls.Clear();
+            AbrirFormulario<Dashboard>();
         }
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
-            var form = Program.ServiceProvider.GetRequiredService<Clientes>();
-            AbrirFormEnPanel(form);
+            AbrirFormulario<Clientes>();
         }
 
         private void btnPedidos_Click(object sender, EventArgs e)
         {
-            var form = Program.ServiceProvider.GetRequiredService<Pedidos>();
-            AbrirFormEnPanel(form);
+            AbrirFormulario<Pedidos>();
         }
 
         private void btnRepartidores_Click(object sender, EventArgs e)
         {
-            var form = Program.ServiceProvider.GetRequiredService<Repartidores>();
-            AbrirFormEnPanel(form);
+            AbrirFormulario<Repartidores>();
         }
 
         private void btnRutas_Click(object sender, EventArgs e)
         {
-            var form = Program.ServiceProvider.GetRequiredService<Rutas>();
-            AbrirFormEnPanel(form);
+            AbrirFormulario<Rutas>();
         }
 
         private void btnReportes_Click(object sender, EventArgs e)
         {
-            var form = Program.ServiceProvider.GetRequiredService<FrmReportes>();
-            AbrirFormEnPanel(form);
+            AbrirFormulario<FrmReportes>();
         }
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            var form = Program.ServiceProvider.GetRequiredService<Clientes>();
-            AbrirFormEnPanel(form);
+            AbrirFormulario<Clientes>();
         }
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            var form = Program.ServiceProvider.GetRequiredService<Pedidos>();
-            AbrirFormEnPanel(form);
+            AbrirFormulario<Pedidos>();
         }
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-            var form = Program.ServiceProvider.GetRequiredService<Repartidores>();
-            AbrirFormEnPanel(form);
+            AbrirFormulario<Repartidores>();
         }
         private void guna2Button5_Click(object sender, EventArgs e)
         {
-            var form = Program.ServiceProvider.GetRequiredService<Rutas>();
-            AbrirFormEnPanel(form);
+            AbrirFormulario<Rutas>();
         }
         private void guna2Button6_Click(object sender, EventArgs e)
         {
-            var form = Program.ServiceProvider.GetRequiredService<Repartidores>();
-            AbrirFormEnPanel(form);
+            AbrirFormulario<FrmReportes>();
         }
-        private void AbrirFormEnPanel(Form form)
+
+        private void AbrirFormulario<T>() where T : Form
         {
-
-            foreach (Control c in guna2Panel3.Controls)
+            if (formularioActivo != null)
             {
-                if (c is Form f) f.Close();
+                formularioActivo.Close();
             }
-            guna2Panel3.Controls.Clear();
 
-            form.TopLevel = false;
-            form.FormBorderStyle = FormBorderStyle.None;
-            form.Dock = DockStyle.Fill;
+            formularioActivo = Program.ServiceProvider.GetRequiredService<T>();
 
-            guna2Panel3.Controls.Add(form);
-            form.Show();
+            formularioActivo.TopLevel = false;
+            formularioActivo.FormBorderStyle = FormBorderStyle.None;
+            formularioActivo.Dock = DockStyle.Fill;
+
+            panelContenedor.Controls.Clear();
+            panelContenedor.Controls.Add(formularioActivo);
+
+            formularioActivo.Show();
         }
+
     }
 }
