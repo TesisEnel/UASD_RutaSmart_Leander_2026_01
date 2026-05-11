@@ -74,7 +74,7 @@ namespace RutaSmart
         {
             AbrirFormulario<Rutas>();
         }
-        private void guna2Button6_Click(object sender, EventArgs e)
+        private void guna2Button6_Click(object sender, EventArgs e) 
         {
             AbrirFormulario<FrmReportes>();
         }
