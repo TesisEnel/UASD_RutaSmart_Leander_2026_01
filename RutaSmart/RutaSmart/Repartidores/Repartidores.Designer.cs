@@ -37,13 +37,13 @@ namespace RutaSmart.UI.Repartidores
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panelContainer = new Panel();
             guna2Panel1 = new Guna2Panel();
             lblTitulo = new Label();
@@ -58,15 +58,14 @@ namespace RutaSmart.UI.Repartidores
             btnGuardar = new Guna2Button();
             btnActualizar = new Guna2Button();
             btnLimpiar = new Guna2Button();
+            guna2Button1 = new Guna2Button();
             pnlGrid = new Guna2Panel();
             dgvRepartidores = new Guna2DataGridView();
             ID = new DataGridViewTextBoxColumn();
             Nombre = new DataGridViewTextBoxColumn();
             Telefono = new DataGridViewTextBoxColumn();
             Estado = new DataGridViewTextBoxColumn();
-            Accion = new DataGridViewTextBoxColumn();
             errorProvider1 = new ErrorProvider(components);
-            guna2Button1 = new Guna2Button();
             panelContainer.SuspendLayout();
             guna2Panel1.SuspendLayout();
             pnlFormulario.SuspendLayout();
@@ -290,6 +289,20 @@ namespace RutaSmart.UI.Repartidores
             btnLimpiar.TabIndex = 2;
             btnLimpiar.Text = "Limpiar";
             // 
+            // guna2Button1
+            // 
+            guna2Button1.BorderRadius = 10;
+            guna2Button1.CustomizableEdges = customizableEdges15;
+            guna2Button1.FillColor = Color.OliveDrab;
+            guna2Button1.Font = new Font("Segoe UI", 9F);
+            guna2Button1.ForeColor = Color.White;
+            guna2Button1.Location = new Point(391, 8);
+            guna2Button1.Name = "guna2Button1";
+            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            guna2Button1.Size = new Size(120, 40);
+            guna2Button1.TabIndex = 3;
+            guna2Button1.Text = "Eliminar";
+            // 
             // pnlGrid
             // 
             pnlGrid.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
@@ -311,7 +324,7 @@ namespace RutaSmart.UI.Repartidores
             dataGridViewCellStyle2.ForeColor = Color.White;
             dgvRepartidores.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dgvRepartidores.ColumnHeadersHeight = 40;
-            dgvRepartidores.Columns.AddRange(new DataGridViewColumn[] { ID, Nombre, Telefono, Estado, Accion });
+            dgvRepartidores.Columns.AddRange(new DataGridViewColumn[] { ID, Nombre, Telefono, Estado });
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = Color.White;
             dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
@@ -324,6 +337,7 @@ namespace RutaSmart.UI.Repartidores
             dgvRepartidores.GridColor = Color.FromArgb(231, 229, 255);
             dgvRepartidores.Location = new Point(0, 0);
             dgvRepartidores.Name = "dgvRepartidores";
+            dgvRepartidores.ReadOnly = true;
             dgvRepartidores.RowHeadersVisible = false;
             dgvRepartidores.Size = new Size(840, 200);
             dgvRepartidores.TabIndex = 0;
@@ -340,7 +354,7 @@ namespace RutaSmart.UI.Repartidores
             dgvRepartidores.ThemeStyle.HeaderStyle.ForeColor = Color.White;
             dgvRepartidores.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dgvRepartidores.ThemeStyle.HeaderStyle.Height = 40;
-            dgvRepartidores.ThemeStyle.ReadOnly = false;
+            dgvRepartidores.ThemeStyle.ReadOnly = true;
             dgvRepartidores.ThemeStyle.RowsStyle.BackColor = Color.White;
             dgvRepartidores.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             dgvRepartidores.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F);
@@ -351,46 +365,35 @@ namespace RutaSmart.UI.Repartidores
             // 
             // ID
             // 
+            ID.DataPropertyName = "RepartidorId";
             ID.HeaderText = "ID";
             ID.Name = "ID";
+            ID.ReadOnly = true;
             // 
             // Nombre
             // 
+            Nombre.DataPropertyName = "Nombre";
             Nombre.HeaderText = "Nombre";
             Nombre.Name = "Nombre";
+            Nombre.ReadOnly = true;
             // 
             // Telefono
             // 
+            Telefono.DataPropertyName = "Telefono";
             Telefono.HeaderText = "Telefono";
             Telefono.Name = "Telefono";
+            Telefono.ReadOnly = true;
             // 
             // Estado
             // 
+            Estado.DataPropertyName = "Estado";
             Estado.HeaderText = "Estado";
             Estado.Name = "Estado";
-            // 
-            // Accion
-            // 
-            Accion.HeaderText = "Accion";
-            Accion.Name = "Accion";
+            Estado.ReadOnly = true;
             // 
             // errorProvider1
             // 
             errorProvider1.ContainerControl = this;
-            // 
-            // guna2Button1
-            // 
-            guna2Button1.BorderRadius = 10;
-            guna2Button1.CustomizableEdges = customizableEdges15;
-            guna2Button1.FillColor = Color.OliveDrab;
-            guna2Button1.Font = new Font("Segoe UI", 9F);
-            guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(391, 8);
-            guna2Button1.Name = "guna2Button1";
-            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            guna2Button1.Size = new Size(120, 40);
-            guna2Button1.TabIndex = 3;
-            guna2Button1.Text = "Eliminar";
             // 
             // Repartidores
             // 
@@ -444,12 +447,10 @@ namespace RutaSmart.UI.Repartidores
         private ErrorProvider errorProvider1;
 
         private Guna2DataGridView dgvRepartidores;
-
+        private Guna2Button guna2Button1;
         private DataGridViewTextBoxColumn ID;
         private DataGridViewTextBoxColumn Nombre;
         private DataGridViewTextBoxColumn Telefono;
         private DataGridViewTextBoxColumn Estado;
-        private DataGridViewTextBoxColumn Accion;
-        private Guna2Button guna2Button1;
     }
 }

@@ -25,8 +25,8 @@ namespace RutaSmart.UI.Pedidos
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -49,6 +49,10 @@ namespace RutaSmart.UI.Pedidos
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panelContainer = new Panel();
             pnlGrid = new Guna2Panel();
             dgvPedidos = new Guna2DataGridView();
@@ -59,8 +63,12 @@ namespace RutaSmart.UI.Pedidos
             colFecha = new DataGridViewTextBoxColumn();
             colReco = new DataGridViewTextBoxColumn();
             colEntrega = new DataGridViewTextBoxColumn();
+            Estado = new DataGridViewTextBoxColumn();
+            Total = new DataGridViewTextBoxColumn();
             pnlFormulario = new Guna2Panel();
             tableFormulario = new TableLayoutPanel();
+            guna2TextBox1 = new Guna2TextBox();
+            guna2ComboBox1 = new Guna2ComboBox();
             txtIdPedido = new Guna2TextBox();
             cmbCliente = new Guna2ComboBox();
             cmbRuta = new Guna2ComboBox();
@@ -117,7 +125,7 @@ namespace RutaSmart.UI.Pedidos
             dataGridViewCellStyle2.ForeColor = Color.White;
             dgvPedidos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dgvPedidos.ColumnHeadersHeight = 40;
-            dgvPedidos.Columns.AddRange(new DataGridViewColumn[] { colId, colCliente, colRepartidor, colRuta, colFecha, colReco, colEntrega });
+            dgvPedidos.Columns.AddRange(new DataGridViewColumn[] { colId, colCliente, colRepartidor, colRuta, colFecha, colReco, colEntrega, Estado, Total });
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = Color.White;
             dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
@@ -130,6 +138,7 @@ namespace RutaSmart.UI.Pedidos
             dgvPedidos.GridColor = Color.LightGray;
             dgvPedidos.Location = new Point(0, 0);
             dgvPedidos.Name = "dgvPedidos";
+            dgvPedidos.ReadOnly = true;
             dgvPedidos.RowHeadersVisible = false;
             dgvPedidos.Size = new Size(1050, 240);
             dgvPedidos.TabIndex = 0;
@@ -146,7 +155,7 @@ namespace RutaSmart.UI.Pedidos
             dgvPedidos.ThemeStyle.HeaderStyle.ForeColor = Color.White;
             dgvPedidos.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dgvPedidos.ThemeStyle.HeaderStyle.Height = 40;
-            dgvPedidos.ThemeStyle.ReadOnly = false;
+            dgvPedidos.ThemeStyle.ReadOnly = true;
             dgvPedidos.ThemeStyle.RowsStyle.BackColor = Color.White;
             dgvPedidos.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             dgvPedidos.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F);
@@ -157,38 +166,66 @@ namespace RutaSmart.UI.Pedidos
             // 
             // colId
             // 
+            colId.DataPropertyName = "PedidoId";
             colId.HeaderText = "ID";
             colId.Name = "colId";
+            colId.ReadOnly = true;
             // 
             // colCliente
             // 
+            colCliente.DataPropertyName = "ClienteId";
             colCliente.HeaderText = "Cliente";
             colCliente.Name = "colCliente";
+            colCliente.ReadOnly = true;
             // 
             // colRepartidor
             // 
+            colRepartidor.DataPropertyName = "RepartidorId";
             colRepartidor.HeaderText = "Repartidor";
             colRepartidor.Name = "colRepartidor";
+            colRepartidor.ReadOnly = true;
             // 
             // colRuta
             // 
+            colRuta.DataPropertyName = "RutaId";
             colRuta.HeaderText = "Ruta";
             colRuta.Name = "colRuta";
+            colRuta.ReadOnly = true;
             // 
             // colFecha
             // 
+            colFecha.DataPropertyName = "FechaPedido";
             colFecha.HeaderText = "Fecha";
             colFecha.Name = "colFecha";
+            colFecha.ReadOnly = true;
             // 
             // colReco
             // 
+            colReco.DataPropertyName = "DireccionRecolecion";
             colReco.HeaderText = "Recolección";
             colReco.Name = "colReco";
+            colReco.ReadOnly = true;
             // 
             // colEntrega
             // 
+            colEntrega.DataPropertyName = "DireccionEntrega";
             colEntrega.HeaderText = "Entrega";
             colEntrega.Name = "colEntrega";
+            colEntrega.ReadOnly = true;
+            // 
+            // Estado
+            // 
+            Estado.DataPropertyName = "Estado";
+            Estado.HeaderText = "Estado";
+            Estado.Name = "Estado";
+            Estado.ReadOnly = true;
+            // 
+            // Total
+            // 
+            Total.DataPropertyName = "Total";
+            Total.HeaderText = "Total";
+            Total.Name = "Total";
+            Total.ReadOnly = true;
             // 
             // pnlFormulario
             // 
@@ -196,11 +233,11 @@ namespace RutaSmart.UI.Pedidos
             pnlFormulario.BackColor = Color.Transparent;
             pnlFormulario.BorderRadius = 18;
             pnlFormulario.Controls.Add(tableFormulario);
-            pnlFormulario.CustomizableEdges = customizableEdges25;
+            pnlFormulario.CustomizableEdges = customizableEdges29;
             pnlFormulario.FillColor = Color.White;
             pnlFormulario.Location = new Point(20, 100);
             pnlFormulario.Name = "pnlFormulario";
-            pnlFormulario.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            pnlFormulario.ShadowDecoration.CustomizableEdges = customizableEdges30;
             pnlFormulario.ShadowDecoration.Enabled = true;
             pnlFormulario.Size = new Size(1050, 260);
             pnlFormulario.TabIndex = 2;
@@ -211,6 +248,8 @@ namespace RutaSmart.UI.Pedidos
             tableFormulario.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.33F));
             tableFormulario.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.33F));
             tableFormulario.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.34F));
+            tableFormulario.Controls.Add(guna2TextBox1, 2, 2);
+            tableFormulario.Controls.Add(guna2ComboBox1, 1, 2);
             tableFormulario.Controls.Add(txtIdPedido, 0, 0);
             tableFormulario.Controls.Add(cmbCliente, 1, 0);
             tableFormulario.Controls.Add(cmbRuta, 2, 0);
@@ -231,10 +270,47 @@ namespace RutaSmart.UI.Pedidos
             tableFormulario.Size = new Size(1050, 260);
             tableFormulario.TabIndex = 0;
             // 
+            // guna2TextBox1
+            // 
+            guna2TextBox1.BorderRadius = 10;
+            guna2TextBox1.CustomizableEdges = customizableEdges3;
+            guna2TextBox1.DefaultText = "";
+            guna2TextBox1.Dock = DockStyle.Fill;
+            guna2TextBox1.Font = new Font("Segoe UI", 9F);
+            guna2TextBox1.Location = new Point(702, 124);
+            guna2TextBox1.Margin = new Padding(10);
+            guna2TextBox1.Name = "guna2TextBox1";
+            guna2TextBox1.PlaceholderText = "Total del Pedido";
+            guna2TextBox1.SelectedText = "";
+            guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            guna2TextBox1.Size = new Size(318, 42);
+            guna2TextBox1.TabIndex = 9;
+            // 
+            // guna2ComboBox1
+            // 
+            guna2ComboBox1.BackColor = Color.Transparent;
+            guna2ComboBox1.BorderRadius = 10;
+            guna2ComboBox1.CustomizableEdges = customizableEdges5;
+            guna2ComboBox1.Dock = DockStyle.Fill;
+            guna2ComboBox1.DrawMode = DrawMode.OwnerDrawFixed;
+            guna2ComboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+            guna2ComboBox1.FocusedColor = Color.Empty;
+            guna2ComboBox1.Font = new Font("Segoe UI", 10F);
+            guna2ComboBox1.ForeColor = Color.FromArgb(68, 88, 112);
+            guna2ComboBox1.FormattingEnabled = true;
+            guna2ComboBox1.ItemHeight = 30;
+            guna2ComboBox1.Items.AddRange(new object[] { "Pendiente", "Entrgado", "En Ruta" });
+            guna2ComboBox1.Location = new Point(366, 124);
+            guna2ComboBox1.Margin = new Padding(10);
+            guna2ComboBox1.Name = "guna2ComboBox1";
+            guna2ComboBox1.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            guna2ComboBox1.Size = new Size(316, 36);
+            guna2ComboBox1.TabIndex = 8;
+            // 
             // txtIdPedido
             // 
             txtIdPedido.BorderRadius = 10;
-            txtIdPedido.CustomizableEdges = customizableEdges3;
+            txtIdPedido.CustomizableEdges = customizableEdges7;
             txtIdPedido.DefaultText = "";
             txtIdPedido.Dock = DockStyle.Fill;
             txtIdPedido.Font = new Font("Segoe UI", 9F);
@@ -244,7 +320,7 @@ namespace RutaSmart.UI.Pedidos
             txtIdPedido.PlaceholderText = "ID Pedido";
             txtIdPedido.ReadOnly = true;
             txtIdPedido.SelectedText = "";
-            txtIdPedido.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            txtIdPedido.ShadowDecoration.CustomizableEdges = customizableEdges8;
             txtIdPedido.Size = new Size(316, 27);
             txtIdPedido.TabIndex = 0;
             // 
@@ -252,7 +328,7 @@ namespace RutaSmart.UI.Pedidos
             // 
             cmbCliente.BackColor = Color.Transparent;
             cmbCliente.BorderRadius = 10;
-            cmbCliente.CustomizableEdges = customizableEdges5;
+            cmbCliente.CustomizableEdges = customizableEdges9;
             cmbCliente.Dock = DockStyle.Fill;
             cmbCliente.DrawMode = DrawMode.OwnerDrawFixed;
             cmbCliente.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -264,7 +340,7 @@ namespace RutaSmart.UI.Pedidos
             cmbCliente.Location = new Point(366, 30);
             cmbCliente.Margin = new Padding(10);
             cmbCliente.Name = "cmbCliente";
-            cmbCliente.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            cmbCliente.ShadowDecoration.CustomizableEdges = customizableEdges10;
             cmbCliente.Size = new Size(316, 36);
             cmbCliente.TabIndex = 1;
             // 
@@ -272,7 +348,7 @@ namespace RutaSmart.UI.Pedidos
             // 
             cmbRuta.BackColor = Color.Transparent;
             cmbRuta.BorderRadius = 10;
-            cmbRuta.CustomizableEdges = customizableEdges7;
+            cmbRuta.CustomizableEdges = customizableEdges11;
             cmbRuta.Dock = DockStyle.Fill;
             cmbRuta.DrawMode = DrawMode.OwnerDrawFixed;
             cmbRuta.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -284,7 +360,7 @@ namespace RutaSmart.UI.Pedidos
             cmbRuta.Location = new Point(702, 30);
             cmbRuta.Margin = new Padding(10);
             cmbRuta.Name = "cmbRuta";
-            cmbRuta.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            cmbRuta.ShadowDecoration.CustomizableEdges = customizableEdges12;
             cmbRuta.Size = new Size(318, 36);
             cmbRuta.TabIndex = 2;
             // 
@@ -292,7 +368,7 @@ namespace RutaSmart.UI.Pedidos
             // 
             cmbRepartidor.BackColor = Color.Transparent;
             cmbRepartidor.BorderRadius = 10;
-            cmbRepartidor.CustomizableEdges = customizableEdges9;
+            cmbRepartidor.CustomizableEdges = customizableEdges13;
             cmbRepartidor.Dock = DockStyle.Fill;
             cmbRepartidor.DrawMode = DrawMode.OwnerDrawFixed;
             cmbRepartidor.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -304,7 +380,7 @@ namespace RutaSmart.UI.Pedidos
             cmbRepartidor.Location = new Point(30, 77);
             cmbRepartidor.Margin = new Padding(10);
             cmbRepartidor.Name = "cmbRepartidor";
-            cmbRepartidor.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            cmbRepartidor.ShadowDecoration.CustomizableEdges = customizableEdges14;
             cmbRepartidor.Size = new Size(316, 36);
             cmbRepartidor.TabIndex = 3;
             // 
@@ -312,7 +388,7 @@ namespace RutaSmart.UI.Pedidos
             // 
             dtpFechaPedido.BorderRadius = 10;
             dtpFechaPedido.Checked = true;
-            dtpFechaPedido.CustomizableEdges = customizableEdges11;
+            dtpFechaPedido.CustomizableEdges = customizableEdges15;
             dtpFechaPedido.Dock = DockStyle.Fill;
             dtpFechaPedido.Font = new Font("Segoe UI", 9F);
             dtpFechaPedido.Format = DateTimePickerFormat.Short;
@@ -321,7 +397,7 @@ namespace RutaSmart.UI.Pedidos
             dtpFechaPedido.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             dtpFechaPedido.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             dtpFechaPedido.Name = "dtpFechaPedido";
-            dtpFechaPedido.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            dtpFechaPedido.ShadowDecoration.CustomizableEdges = customizableEdges16;
             dtpFechaPedido.Size = new Size(316, 27);
             dtpFechaPedido.TabIndex = 4;
             dtpFechaPedido.Value = new DateTime(2026, 5, 9, 15, 52, 7, 37);
@@ -329,7 +405,7 @@ namespace RutaSmart.UI.Pedidos
             // txtDireccionEntrega
             // 
             txtDireccionEntrega.BorderRadius = 10;
-            txtDireccionEntrega.CustomizableEdges = customizableEdges13;
+            txtDireccionEntrega.CustomizableEdges = customizableEdges17;
             txtDireccionEntrega.DefaultText = "";
             txtDireccionEntrega.Dock = DockStyle.Fill;
             txtDireccionEntrega.Font = new Font("Segoe UI", 9F);
@@ -338,15 +414,14 @@ namespace RutaSmart.UI.Pedidos
             txtDireccionEntrega.Name = "txtDireccionEntrega";
             txtDireccionEntrega.PlaceholderText = "Dirección de entrega";
             txtDireccionEntrega.SelectedText = "";
-            txtDireccionEntrega.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            txtDireccionEntrega.ShadowDecoration.CustomizableEdges = customizableEdges18;
             txtDireccionEntrega.Size = new Size(318, 27);
             txtDireccionEntrega.TabIndex = 5;
             // 
             // txtDireccionRecoleccion
             // 
             txtDireccionRecoleccion.BorderRadius = 10;
-            tableFormulario.SetColumnSpan(txtDireccionRecoleccion, 3);
-            txtDireccionRecoleccion.CustomizableEdges = customizableEdges15;
+            txtDireccionRecoleccion.CustomizableEdges = customizableEdges19;
             txtDireccionRecoleccion.DefaultText = "";
             txtDireccionRecoleccion.Dock = DockStyle.Fill;
             txtDireccionRecoleccion.Font = new Font("Segoe UI", 9F);
@@ -356,8 +431,8 @@ namespace RutaSmart.UI.Pedidos
             txtDireccionRecoleccion.Name = "txtDireccionRecoleccion";
             txtDireccionRecoleccion.PlaceholderText = "Dirección de recolección";
             txtDireccionRecoleccion.SelectedText = "";
-            txtDireccionRecoleccion.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            txtDireccionRecoleccion.Size = new Size(990, 42);
+            txtDireccionRecoleccion.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            txtDireccionRecoleccion.Size = new Size(316, 42);
             txtDireccionRecoleccion.TabIndex = 6;
             // 
             // flowBotones
@@ -377,58 +452,62 @@ namespace RutaSmart.UI.Pedidos
             // btnGuardar
             // 
             btnGuardar.BorderRadius = 10;
-            btnGuardar.CustomizableEdges = customizableEdges17;
+            btnGuardar.CustomizableEdges = customizableEdges21;
             btnGuardar.FillColor = Color.FromArgb(37, 99, 235);
             btnGuardar.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnGuardar.ForeColor = Color.White;
             btnGuardar.Location = new Point(3, 3);
             btnGuardar.Name = "btnGuardar";
-            btnGuardar.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            btnGuardar.ShadowDecoration.CustomizableEdges = customizableEdges22;
             btnGuardar.Size = new Size(110, 40);
             btnGuardar.TabIndex = 1;
             btnGuardar.Text = "Guardar";
+            btnGuardar.Click += btnGuardar_Click;
             // 
             // btnEditar
             // 
             btnEditar.BorderRadius = 10;
-            btnEditar.CustomizableEdges = customizableEdges19;
+            btnEditar.CustomizableEdges = customizableEdges23;
             btnEditar.FillColor = Color.Gray;
             btnEditar.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnEditar.ForeColor = Color.White;
             btnEditar.Location = new Point(119, 3);
             btnEditar.Name = "btnEditar";
-            btnEditar.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            btnEditar.ShadowDecoration.CustomizableEdges = customizableEdges24;
             btnEditar.Size = new Size(110, 40);
             btnEditar.TabIndex = 2;
             btnEditar.Text = "Modificar";
+            btnEditar.Click += btnEditar_Click;
             // 
             // btnLimpiar
             // 
             btnLimpiar.BorderRadius = 10;
-            btnLimpiar.CustomizableEdges = customizableEdges21;
+            btnLimpiar.CustomizableEdges = customizableEdges25;
             btnLimpiar.FillColor = Color.FromArgb(249, 115, 22);
             btnLimpiar.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnLimpiar.ForeColor = Color.White;
             btnLimpiar.Location = new Point(235, 3);
             btnLimpiar.Name = "btnLimpiar";
-            btnLimpiar.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            btnLimpiar.ShadowDecoration.CustomizableEdges = customizableEdges26;
             btnLimpiar.Size = new Size(110, 40);
             btnLimpiar.TabIndex = 3;
             btnLimpiar.Text = "Limpiar";
+            btnLimpiar.Click += btnLimpiar_Click;
             // 
             // btnEliminar
             // 
             btnEliminar.BorderRadius = 10;
-            btnEliminar.CustomizableEdges = customizableEdges23;
+            btnEliminar.CustomizableEdges = customizableEdges27;
             btnEliminar.FillColor = Color.OliveDrab;
             btnEliminar.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnEliminar.ForeColor = Color.White;
             btnEliminar.Location = new Point(351, 3);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            btnEliminar.ShadowDecoration.CustomizableEdges = customizableEdges28;
             btnEliminar.Size = new Size(110, 40);
             btnEliminar.TabIndex = 4;
             btnEliminar.Text = "Eliminar";
+            btnEliminar.Click += btnEliminar_Click;
             // 
             // lblSubtitulo
             // 
@@ -500,7 +579,8 @@ namespace RutaSmart.UI.Pedidos
 
         private Guna2Panel pnlGrid;
         private Guna2DataGridView dgvPedidos;
-
+        private Guna2TextBox guna2TextBox1;
+        private Guna2ComboBox guna2ComboBox1;
         private DataGridViewTextBoxColumn colId;
         private DataGridViewTextBoxColumn colCliente;
         private DataGridViewTextBoxColumn colRepartidor;
@@ -508,5 +588,7 @@ namespace RutaSmart.UI.Pedidos
         private DataGridViewTextBoxColumn colFecha;
         private DataGridViewTextBoxColumn colReco;
         private DataGridViewTextBoxColumn colEntrega;
+        private DataGridViewTextBoxColumn Estado;
+        private DataGridViewTextBoxColumn Total;
     }
 }

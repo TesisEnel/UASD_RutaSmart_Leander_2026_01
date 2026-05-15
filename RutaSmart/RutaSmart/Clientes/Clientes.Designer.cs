@@ -36,15 +36,15 @@ namespace RutaSmart.UI.Clientes
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
             guna2Panel1 = new Guna2Panel();
             lblTitulo = new Label();
@@ -59,17 +59,17 @@ namespace RutaSmart.UI.Clientes
             flowBotones = new FlowLayoutPanel();
             btnGuardar = new Guna2Button();
             btnLimpiar = new Guna2Button();
-            pnlGrid = new Guna2Panel();
-            dgvClientes = new Guna2DataGridView();
-            errorProvider1 = new ErrorProvider(components);
             guna2Button1 = new Guna2Button();
             guna2Button2 = new Guna2Button();
-            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            pnlGrid = new Guna2Panel();
+            dgvClientes = new Guna2DataGridView();
+            ClienteId = new DataGridViewTextBoxColumn();
             Nombre = new DataGridViewTextBoxColumn();
-            Emaill = new DataGridViewTextBoxColumn();
+            Email = new DataGridViewTextBoxColumn();
             Telefono = new DataGridViewTextBoxColumn();
             Direccion = new DataGridViewTextBoxColumn();
             Fecha = new DataGridViewTextBoxColumn();
+            errorProvider1 = new ErrorProvider(components);
             panel1.SuspendLayout();
             guna2Panel1.SuspendLayout();
             pnlFormulario.SuspendLayout();
@@ -294,6 +294,36 @@ namespace RutaSmart.UI.Clientes
             btnLimpiar.Text = "Limpiar";
             btnLimpiar.Click += btnLimpiar_Click;
             // 
+            // guna2Button1
+            // 
+            guna2Button1.BorderRadius = 10;
+            guna2Button1.CustomizableEdges = customizableEdges15;
+            guna2Button1.FillColor = Color.FromArgb(249, 115, 22);
+            guna2Button1.Font = new Font("Segoe UI", 9F);
+            guna2Button1.ForeColor = Color.White;
+            guna2Button1.Location = new Point(265, 8);
+            guna2Button1.Name = "guna2Button1";
+            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            guna2Button1.Size = new Size(120, 40);
+            guna2Button1.TabIndex = 2;
+            guna2Button1.Text = "Modificar";
+            guna2Button1.Click += guna2Button1_Click;
+            // 
+            // guna2Button2
+            // 
+            guna2Button2.BorderRadius = 10;
+            guna2Button2.CustomizableEdges = customizableEdges17;
+            guna2Button2.FillColor = Color.OliveDrab;
+            guna2Button2.Font = new Font("Segoe UI", 9F);
+            guna2Button2.ForeColor = Color.White;
+            guna2Button2.Location = new Point(391, 8);
+            guna2Button2.Name = "guna2Button2";
+            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            guna2Button2.Size = new Size(120, 40);
+            guna2Button2.TabIndex = 3;
+            guna2Button2.Text = "Eliminar";
+            guna2Button2.Click += guna2Button2_Click;
+            // 
             // pnlGrid
             // 
             pnlGrid.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
@@ -318,7 +348,7 @@ namespace RutaSmart.UI.Clientes
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
             dgvClientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dgvClientes.ColumnHeadersHeight = 40;
-            dgvClientes.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, Nombre, Emaill, Telefono, Direccion, Fecha });
+            dgvClientes.Columns.AddRange(new DataGridViewColumn[] { ClienteId, Nombre, Email, Telefono, Direccion, Fecha });
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = Color.White;
             dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
@@ -332,6 +362,7 @@ namespace RutaSmart.UI.Clientes
             dgvClientes.Location = new Point(0, 0);
             dgvClientes.Margin = new Padding(20, 10, 20, 20);
             dgvClientes.Name = "dgvClientes";
+            dgvClientes.ReadOnly = true;
             dgvClientes.RowHeadersVisible = false;
             dgvClientes.Size = new Size(740, 100);
             dgvClientes.TabIndex = 3;
@@ -348,7 +379,7 @@ namespace RutaSmart.UI.Clientes
             dgvClientes.ThemeStyle.HeaderStyle.ForeColor = Color.White;
             dgvClientes.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dgvClientes.ThemeStyle.HeaderStyle.Height = 40;
-            dgvClientes.ThemeStyle.ReadOnly = false;
+            dgvClientes.ThemeStyle.ReadOnly = true;
             dgvClientes.ThemeStyle.RowsStyle.BackColor = Color.White;
             dgvClientes.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             dgvClientes.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F);
@@ -357,67 +388,51 @@ namespace RutaSmart.UI.Clientes
             dgvClientes.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
             dgvClientes.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
             // 
-            // errorProvider1
+            // ClienteId
             // 
-            errorProvider1.ContainerControl = this;
-            // 
-            // guna2Button1
-            // 
-            guna2Button1.BorderRadius = 10;
-            guna2Button1.CustomizableEdges = customizableEdges15;
-            guna2Button1.FillColor = Color.FromArgb(249, 115, 22);
-            guna2Button1.Font = new Font("Segoe UI", 9F);
-            guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(265, 8);
-            guna2Button1.Name = "guna2Button1";
-            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            guna2Button1.Size = new Size(120, 40);
-            guna2Button1.TabIndex = 2;
-            guna2Button1.Text = "Modificar";
-            // 
-            // guna2Button2
-            // 
-            guna2Button2.BorderRadius = 10;
-            guna2Button2.CustomizableEdges = customizableEdges17;
-            guna2Button2.FillColor = Color.OliveDrab;
-            guna2Button2.Font = new Font("Segoe UI", 9F);
-            guna2Button2.ForeColor = Color.White;
-            guna2Button2.Location = new Point(391, 8);
-            guna2Button2.Name = "guna2Button2";
-            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            guna2Button2.Size = new Size(120, 40);
-            guna2Button2.TabIndex = 3;
-            guna2Button2.Text = "Eliminar";
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            dataGridViewTextBoxColumn1.HeaderText = "ID";
-            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            ClienteId.DataPropertyName = "ClienteId";
+            ClienteId.HeaderText = "ID";
+            ClienteId.Name = "ClienteId";
+            ClienteId.ReadOnly = true;
             // 
             // Nombre
             // 
+            Nombre.DataPropertyName = "Nombre";
             Nombre.HeaderText = "Nombre";
             Nombre.Name = "Nombre";
+            Nombre.ReadOnly = true;
             // 
-            // Emaill
+            // Email
             // 
-            Emaill.HeaderText = "Email";
-            Emaill.Name = "Emaill";
+            Email.DataPropertyName = "Email";
+            Email.HeaderText = "Email";
+            Email.Name = "Email";
+            Email.ReadOnly = true;
             // 
             // Telefono
             // 
+            Telefono.DataPropertyName = "Telefono";
             Telefono.HeaderText = "Telefono";
             Telefono.Name = "Telefono";
+            Telefono.ReadOnly = true;
             // 
             // Direccion
             // 
+            Direccion.DataPropertyName = "Direccion";
             Direccion.HeaderText = "Direccion";
             Direccion.Name = "Direccion";
+            Direccion.ReadOnly = true;
             // 
             // Fecha
             // 
+            Fecha.DataPropertyName = "FechaCreacion";
             Fecha.HeaderText = "Fecha";
             Fecha.Name = "Fecha";
+            Fecha.ReadOnly = true;
+            // 
+            // errorProvider1
+            // 
+            errorProvider1.ContainerControl = this;
             // 
             // Clientes
             // 
@@ -462,9 +477,9 @@ namespace RutaSmart.UI.Clientes
         private Guna2DataGridView dgvClientes;
         private Guna2Button guna2Button1;
         private Guna2Button guna2Button2;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn ClienteId;
         private DataGridViewTextBoxColumn Nombre;
-        private DataGridViewTextBoxColumn Emaill;
+        private DataGridViewTextBoxColumn Email;
         private DataGridViewTextBoxColumn Telefono;
         private DataGridViewTextBoxColumn Direccion;
         private DataGridViewTextBoxColumn Fecha;

@@ -133,7 +133,6 @@ public class RepartidoresServiceTests
             RepartidorId = id,
             Nombre = nombre,
             Telefono = null,
-            Vehiculo = null,
             Estado = null
         };
     }

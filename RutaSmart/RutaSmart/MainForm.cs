@@ -17,10 +17,24 @@ namespace RutaSmart
         private readonly RepartidoresService? _repartidoresService;
         private readonly RutaService? _rutaService;
         private Form? formularioActivo;
+
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000; // WS_EX_COMPOSITED
+                return cp;
+            }
+        }
+
         public MainForm(ClienteService clienteService, PedidosService pedidosService,
         RepartidoresService repartidoresService, RutaService rutaService)
         {
             InitializeComponent();
+
+            this.DoubleBuffered = true;
+
             _clienteService = clienteService;
             _pedidosService = pedidosService;
             _repartidoresService = repartidoresService;
@@ -46,7 +60,7 @@ namespace RutaSmart
 
         private void btnRepartidores_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<Repartidores>();
+           AbrirFormulario<Repartidores>();
         }
 
         private void btnRutas_Click(object sender, EventArgs e)
@@ -58,45 +72,64 @@ namespace RutaSmart
         {
             AbrirFormulario<FrmReportes>();
         }
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<Dashboard>();
+        }
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             AbrirFormulario<Clientes>();
         }
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<Pedidos>();
+           AbrirFormulario<Pedidos>();
         }
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<Repartidores>();
+           AbrirFormulario<Repartidores>();
         }
         private void guna2Button5_Click(object sender, EventArgs e)
         {
             AbrirFormulario<Rutas>();
         }
-        private void guna2Button6_Click(object sender, EventArgs e) 
+        private void guna2Button6_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<FrmReportes>();
+           AbrirFormulario<FrmReportes>();
         }
+
+        private readonly Dictionary<Type, Form> _formularioCache = new();
 
         private void AbrirFormulario<T>() where T : Form
         {
             if (formularioActivo != null)
+                formularioActivo.Hide();
+
+            Type tipo = typeof(T);
+
+            if (!_formularioCache.TryGetValue(tipo, out Form? form) || form.IsDisposed)
             {
-                formularioActivo.Close();
+                form = Program.ServiceProvider.GetRequiredService<T>();
+                form.MdiParent = this;
+                form.Dock = DockStyle.Fill;
+                form.FormBorderStyle = FormBorderStyle.None;
+
+                // Activar doble buffer en el hijo también
+                form.GetType()
+                    .GetProperty("DoubleBuffered",
+                        System.Reflection.BindingFlags.Instance |
+                        System.Reflection.BindingFlags.NonPublic)?
+                    .SetValue(form, true);
+
+                _formularioCache[tipo] = form;
             }
 
-            formularioActivo = Program.ServiceProvider.GetRequiredService<T>();
+            // Suspender el dibujado del panel contenedor mientras se hace el swap
+            SuspendLayout();
+            form.Show();
+            form.BringToFront();
+            ResumeLayout();
 
-            formularioActivo.TopLevel = false;
-            formularioActivo.FormBorderStyle = FormBorderStyle.None;
-            formularioActivo.Dock = DockStyle.Fill;
-
-            panelContenedor.Controls.Clear();
-            panelContenedor.Controls.Add(formularioActivo);
-
-            formularioActivo.Show();
+            formularioActivo = form;
         }
-
     }
 }

@@ -19,12 +19,18 @@ public class RepartidoresService(RutaSmartContext context) : IService<Repartidor
 
     public async Task<bool> Eliminar(int id)
     {
-        var repartidor = await context.Repartidores.FindAsync(id);
+        var repartidor = await context.Repartidores
+           .Include(r => r.Pedidos) 
+           .FirstOrDefaultAsync(r => r.RepartidorId == id);
 
         if (repartidor == null)
             return false;
 
+        if (repartidor.Pedidos != null && repartidor.Pedidos.Any())
+            return false;
+
         context.Repartidores.Remove(repartidor);
+
         return (await context.SaveChangesAsync()) > 0;
     }
 
@@ -51,7 +57,16 @@ public class RepartidoresService(RutaSmartContext context) : IService<Repartidor
 
     public async Task<bool> Modificar(Repartidore repartidor)
     {
+
+        var local = context.Set<Repartidore>()
+        .Local
+        .FirstOrDefault(x => x.RepartidorId == repartidor.RepartidorId);
+
+        if (local != null)
+            context.Entry(local).State = EntityState.Detached;
+
         context.Update(repartidor);
+
         return (await context.SaveChangesAsync()) > 0;
     }
 }

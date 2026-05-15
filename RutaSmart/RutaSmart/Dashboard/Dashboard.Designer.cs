@@ -34,12 +34,6 @@ namespace RutaSmart.UI.Dashboard
         private Label lblUltimosPedidos;
         private Guna2DataGridView dgvUltimosPedidos;
 
-        private DataGridViewTextBoxColumn colId;
-        private DataGridViewTextBoxColumn colCliente;
-        private DataGridViewTextBoxColumn colRepartidor;
-        private DataGridViewTextBoxColumn colEstado;
-        private DataGridViewTextBoxColumn colFecha;
-
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -434,6 +428,7 @@ namespace RutaSmart.UI.Dashboard
             dgvUltimosPedidos.GridColor = Color.FromArgb(231, 229, 255);
             dgvUltimosPedidos.Location = new Point(20, 390);
             dgvUltimosPedidos.Name = "dgvUltimosPedidos";
+            dgvUltimosPedidos.ReadOnly = true;
             dgvUltimosPedidos.RowHeadersVisible = false;
             dgvUltimosPedidos.Size = new Size(1140, 250);
             dgvUltimosPedidos.TabIndex = 3;
@@ -450,7 +445,7 @@ namespace RutaSmart.UI.Dashboard
             dgvUltimosPedidos.ThemeStyle.HeaderStyle.ForeColor = Color.White;
             dgvUltimosPedidos.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dgvUltimosPedidos.ThemeStyle.HeaderStyle.Height = 45;
-            dgvUltimosPedidos.ThemeStyle.ReadOnly = false;
+            dgvUltimosPedidos.ThemeStyle.ReadOnly = true;
             dgvUltimosPedidos.ThemeStyle.RowsStyle.BackColor = Color.White;
             dgvUltimosPedidos.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             dgvUltimosPedidos.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F);
@@ -461,28 +456,38 @@ namespace RutaSmart.UI.Dashboard
             // 
             // colId
             // 
+            colId.DataPropertyName = "ID";
             colId.HeaderText = "ID";
             colId.Name = "colId";
+            colId.ReadOnly = true;
             // 
             // colCliente
             // 
+            colCliente.DataPropertyName = "Cliente";
             colCliente.HeaderText = "Cliente";
             colCliente.Name = "colCliente";
+            colCliente.ReadOnly = true;
             // 
             // colRepartidor
             // 
+            colRepartidor.DataPropertyName = "Repartidor";
             colRepartidor.HeaderText = "Repartidor";
             colRepartidor.Name = "colRepartidor";
+            colRepartidor.ReadOnly = true;
             // 
             // colEstado
             // 
+            colEstado.DataPropertyName = "Estado";
             colEstado.HeaderText = "Estado";
             colEstado.Name = "colEstado";
+            colEstado.ReadOnly = true;
             // 
             // colFecha
             // 
+            colFecha.DataPropertyName = "Fecha";
             colFecha.HeaderText = "Fecha";
             colFecha.Name = "colFecha";
+            colFecha.ReadOnly = true;
             // 
             // Dashboard
             // 
@@ -525,5 +530,10 @@ namespace RutaSmart.UI.Dashboard
         private Guna2PictureBox guna2PictureBox2;
         private Guna2PictureBox guna2PictureBox3;
         private Guna2PictureBox guna2PictureBox4;
+        private DataGridViewTextBoxColumn colId;
+        private DataGridViewTextBoxColumn colCliente;
+        private DataGridViewTextBoxColumn colRepartidor;
+        private DataGridViewTextBoxColumn colEstado;
+        private DataGridViewTextBoxColumn colFecha;
     }
 }

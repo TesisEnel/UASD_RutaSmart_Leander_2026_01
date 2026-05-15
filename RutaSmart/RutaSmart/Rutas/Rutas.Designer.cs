@@ -334,6 +334,7 @@ namespace RutaSmart.UI.Rutas
             dgvRutas.GridColor = Color.FromArgb(231, 229, 255);
             dgvRutas.Location = new Point(0, 0);
             dgvRutas.Name = "dgvRutas";
+            dgvRutas.ReadOnly = true;
             dgvRutas.RowHeadersVisible = false;
             dgvRutas.RowTemplate.Height = 35;
             dgvRutas.Size = new Size(960, 240);
@@ -351,7 +352,7 @@ namespace RutaSmart.UI.Rutas
             dgvRutas.ThemeStyle.HeaderStyle.ForeColor = Color.White;
             dgvRutas.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dgvRutas.ThemeStyle.HeaderStyle.Height = 40;
-            dgvRutas.ThemeStyle.ReadOnly = false;
+            dgvRutas.ThemeStyle.ReadOnly = true;
             dgvRutas.ThemeStyle.RowsStyle.BackColor = Color.White;
             dgvRutas.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             dgvRutas.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F);
@@ -362,23 +363,31 @@ namespace RutaSmart.UI.Rutas
             // 
             // ID
             // 
+            ID.DataPropertyName = "RutaId";
             ID.HeaderText = "ID";
             ID.Name = "ID";
+            ID.ReadOnly = true;
             // 
             // NombreRuta
             // 
+            NombreRuta.DataPropertyName = "Nombre";
             NombreRuta.HeaderText = "Nombre Ruta";
             NombreRuta.Name = "NombreRuta";
+            NombreRuta.ReadOnly = true;
             // 
             // Repartidor
             // 
+            Repartidor.DataPropertyName = "Repartidor";
             Repartidor.HeaderText = "Repartidor";
             Repartidor.Name = "Repartidor";
+            Repartidor.ReadOnly = true;
             // 
             // Zona
             // 
+            Zona.DataPropertyName = "Zona";
             Zona.HeaderText = "Zona / Área";
             Zona.Name = "Zona";
+            Zona.ReadOnly = true;
             // 
             // Rutas
             // 
@@ -427,7 +436,6 @@ namespace RutaSmart.UI.Rutas
 
         private Guna2Panel pnlGrid;
         private Guna2DataGridView dgvRutas;
-
         private DataGridViewTextBoxColumn ID;
         private DataGridViewTextBoxColumn NombreRuta;
         private DataGridViewTextBoxColumn Repartidor;

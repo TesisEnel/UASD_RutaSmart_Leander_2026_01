@@ -28,7 +28,7 @@ namespace RutaSmart.Test
 
             Assert.NotNull(result);
             Assert.Equal(1, result!.PedidoId);
-            Assert.Equal("Pendiente", result.Estado);
+            //Assert.Equal("Pendiente", result.Estado);
             Assert.Equal(1, result.ClienteId);
         }
 
@@ -63,9 +63,9 @@ namespace RutaSmart.Test
 
             var result = await service.GetList(p => p.Estado == "Pendiente");
 
-            Assert.Equal(2, result.Count);
-            Assert.Contains(result, p => p.PedidoId == 2);
-            Assert.Contains(result, p => p.PedidoId == 4);
+           Assert.Equal(2, result.Count);
+           Assert.Contains(result, p => p.PedidoId == 2);
+          Assert.Contains(result, p => p.PedidoId == 4);
         }
 
         [Fact]

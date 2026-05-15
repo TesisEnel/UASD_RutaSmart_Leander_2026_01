@@ -20,12 +20,18 @@ public class ClienteService(RutaSmartContext context) : IService<Cliente, int>
 
     public async Task<bool> Eliminar(int id)
     {
-        var cliente = await context.Clientes.FindAsync(id);
+        var cliente = await context.Clientes
+        .Include(c => c.Pedidos)
+        .FirstOrDefaultAsync(c => c.ClienteId == id);
 
         if (cliente == null)
             return false;
 
+        if (cliente.Pedidos.Any())
+            return false;
+
         context.Clientes.Remove(cliente);
+
         return (await context.SaveChangesAsync()) > 0;
     }
 
@@ -52,7 +58,15 @@ public class ClienteService(RutaSmartContext context) : IService<Cliente, int>
 
     public async Task<bool> Modificar(Cliente cliente)
     {
+        var local = context.Set<Cliente>()
+        .Local
+        .FirstOrDefault(x => x.ClienteId == cliente.ClienteId);
+
+        if (local != null)
+            context.Entry(local).State = EntityState.Detached;
+
         context.Update(cliente);
+
         return (await context.SaveChangesAsync()) > 0;
     }
 }
