@@ -51,7 +51,16 @@ public class PedidosService(RutaSmartContext context) : IService<Pedido, int>
 
     public async Task<bool> Modificar(Pedido pedido)
     {
+
+        var local = context.Set<Pedido>()
+        .Local
+        .FirstOrDefault(x => x.PedidoId == pedido.PedidoId);
+
+        if (local != null)
+            context.Entry(local).State = EntityState.Detached;
+
         context.Update(pedido);
+
         return (await context.SaveChangesAsync()) > 0;
     }
 }

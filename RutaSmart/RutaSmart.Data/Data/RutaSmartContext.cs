@@ -34,35 +34,67 @@ public partial class RutaSmartContext : DbContext
         {
             entity.HasKey(e => e.ClienteId).HasName("PK__Clientes__71ABD0872400CD64");
 
-            entity.Property(e => e.FechaCreacion).HasDefaultValueSql("(getdate())");
+            entity.Property(e => e.Direccion).HasMaxLength(200);
+            entity.Property(e => e.Email).HasMaxLength(150);
+            entity.Property(e => e.FechaCreacion)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.Nombre).HasMaxLength(100);
+            entity.Property(e => e.Telefono).HasMaxLength(20);
         });
 
         modelBuilder.Entity<Pedido>(entity =>
         {
             entity.HasKey(e => e.PedidoId).HasName("PK__Pedidos__09BA1430458471C2");
 
-            entity.Property(e => e.Estado).HasDefaultValue("Pendiente");
-            entity.Property(e => e.FechaPedido).HasDefaultValueSql("(getdate())");
+            entity.Property(e => e.DireccionEntrega).HasMaxLength(200);
+            entity.Property(e => e.DireccionRecolecion)
+                .HasMaxLength(200)
+                .IsUnicode(false);
+            entity.Property(e => e.Estado)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+            entity.Property(e => e.FechaPedido)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.Total).HasColumnType("decimal(18, 2)");
 
             entity.HasOne(d => d.Cliente).WithMany(p => p.Pedidos)
+                .HasForeignKey(d => d.ClienteId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_Pedidos_Clientes");
 
-            entity.HasOne(d => d.Repartidor).WithMany(p => p.Pedidos).HasConstraintName("FK_Pedidos_Repartidores");
+            entity.HasOne(d => d.Repartidor).WithMany(p => p.Pedidos)
+                .HasForeignKey(d => d.RepartidorId)
+                .HasConstraintName("FK_Pedidos_Repartidores");
 
-            entity.HasOne(d => d.Ruta).WithMany(p => p.Pedidos).HasConstraintName("FK_Pedidos_Rutas");
+            entity.HasOne(d => d.Ruta).WithMany(p => p.Pedidos)
+                .HasForeignKey(d => d.RutaId)
+                .HasConstraintName("FK_Pedidos_Rutas");
         });
 
         modelBuilder.Entity<Repartidore>(entity =>
         {
             entity.HasKey(e => e.RepartidorId).HasName("PK__Repartid__2BEB7503B44D6F51");
 
-            entity.Property(e => e.Estado).HasDefaultValue("Disponible");
+            entity.Property(e => e.Estado)
+                .HasMaxLength(20)
+                .HasDefaultValue("Disponible");
+            entity.Property(e => e.Nombre).HasMaxLength(100);
+            entity.Property(e => e.Telefono).HasMaxLength(20);
         });
 
         modelBuilder.Entity<Ruta>(entity =>
         {
             entity.HasKey(e => e.RutaId).HasName("PK__Rutas__7B61998E7BF65666");
+
+            entity.Property(e => e.Nombre).HasMaxLength(100);
+            entity.Property(e => e.Repartidor)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+            entity.Property(e => e.Zona)
+                .HasMaxLength(50)
+                .IsUnicode(false);
         });
 
         OnModelCreatingPartial(modelBuilder);

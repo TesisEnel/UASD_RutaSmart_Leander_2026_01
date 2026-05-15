@@ -132,9 +132,8 @@ public class RutaServiceTests
         {
             RutaId = id,
             Nombre = nombre,
-            Descripcion = null,
-            Distancia = null,
-            TiempoEstimado = null
+            Repartidor = null,
+            Zona = null
         };
     }
 }

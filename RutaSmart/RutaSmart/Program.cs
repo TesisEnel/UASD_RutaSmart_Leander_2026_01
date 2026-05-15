@@ -33,7 +33,7 @@ namespace RutaSmart
         {
             services.AddDbContext<RutaSmartContext>(options =>
                 options.UseSqlServer(
-                    "Server=.\\SQLEXPRESS;Database=RutaSmartDB;Trusted_Connection=True;TrustServerCertificate=True;",
+                    "Server=.\\SQLEXPRESS;Database=RutaSmart;Trusted_Connection=True;TrustServerCertificate=True;",
                     sqlOptions =>
                     {
                         sqlOptions.EnableRetryOnFailure();
