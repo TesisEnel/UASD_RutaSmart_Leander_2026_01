@@ -1,10 +1,8 @@
 ## RutaSmart
 
-
-
 Este proyecto consiste en el desarrollo de un sistema enfocado en la gestión de entregas donde se puedan manejar de forma organizada los clientes, pedidos, rutas y repartidores. La idea es tener control completo del proceso de envío, desde que el pedido se registra hasta que se entrega, utilizando estados como pendiente, en ruta y entregado.
 
-
+<img width="1364" height="719" alt="image" src="https://github.com/user-attachments/assets/34c99779-fc55-4936-8643-56e6a2cf8630" />
 
 Sistema de logística y control de entregas desarrollado en C#.
 
@@ -29,8 +27,6 @@ https://www.figma.com/design/gai1lYAaOFGqDfLs3qeqXi/RutaSmart?node-id=0-1&p=f&t=
 
 - Entity Framework
 
-
-
 ## Funcionalidades
 
 - Registro de clientes
@@ -41,9 +37,10 @@ https://www.figma.com/design/gai1lYAaOFGqDfLs3qeqXi/RutaSmart?node-id=0-1&p=f&t=
 
 - Reportes
 
+## Resultado de los Test
 
+<img width="576" height="309" alt="image" src="https://github.com/user-attachments/assets/ca013730-46c2-4c49-8795-eba509a892ef" />
 
 ## Autor
 
 Leander Valdez
-
